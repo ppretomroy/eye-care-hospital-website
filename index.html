@@ -1,13 +1,14 @@
-<!-- ... existing code ... -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chokher Alo Retina Glaucoma Hospital & Phaco Center | Dhaka, Bangladesh</title>
   
-  <!-- Google Fonts: Plus Jakarta Sans & Hind Siliguri for authentic Bangla typography -->
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
   
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -21,8 +22,7 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', '"Hind Siliguri"', 'sans-serif'],
-            bengali: ['"Hind Siliguri"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
             serif: ['"Playfair Display"', 'serif'],
           },
           colors: {
@@ -50,22 +50,45 @@
       }
     }
   </script>
-<!-- ... existing code ... -->
+  <style>
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #0284c7;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0369a1;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
 <body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden custom-scrollbar">
 
-  <!-- Top Emergency & Bangladeshi Helpdesk Bar -->
+  <!-- Top Emergency & Helpdesk Bar -->
   <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
       <div class="flex items-center space-x-4">
         <span class="flex items-center text-teal-400 font-medium">
           <span class="inline-block w-2 h-2 rounded-full bg-teal-400 animate-pulse mr-2"></span>
-          24/7 জরুরী চক্ষু সেবা (Eye Trauma Care)
+          24/7 Emergency Eye Trauma Care
         </span>
         <span class="hidden md:inline text-slate-500">|</span>
-        <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>সেলিম শপিং সেন্টার (২য় তলা), বাংলা স্কুল মোড়, সদর রোড, ভোলা</span>
+        <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Selim Shopping Center (2nd Floor), Bangla School Mor, Sadar Road, Bhola</span>
       </div>
       <div class="flex items-center space-x-5">
-        <a href="tel:09666710610" class="hover:text-white transition flex items-center font-semibold text-slate-200">
+        <a href="tel:01981369393" class="hover:text-white transition flex items-center font-semibold text-slate-200">
           <i class="fa-solid fa-phone-volume text-brand-400 mr-1.5 text-xs"></i> 01981-369393
         </a>
         <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 text-emerald-400 transition flex items-center font-semibold text-xs">
@@ -78,63 +101,56 @@
     </div>
   </div>
 
-  <!-- Solid White Header (Non-transparent) -->
+  <!-- Header -->
   <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm transition-all duration-300" id="mainHeader">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Hospital Brand Logo (Recreated from Provided Image) -->
+        <!-- Hospital Brand Logo -->
         <a href="#" class="flex items-center space-x-3 group">
           <div class="w-14 h-12 flex items-center justify-center transition group-hover:scale-105">
-            <!-- Custom Vector Eye Logo Matching Provided Image -->
             <svg viewBox="0 0 280 180" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Right Sclera Shade -->
               <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#64748B"/>
-              <!-- Upper Eyelid / Dark Brow Contour -->
               <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#18181B"/>
-              <!-- Outer Lower Contour -->
               <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#18181B"/>
-              <!-- Iris (Vibrant Cyan / Blue) -->
               <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
-              <!-- Pupil (Dark) -->
               <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
-              <!-- Specular Reflection Highlight -->
               <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
             </svg>
           </div>
           <div>
             <div class="flex items-center flex-wrap gap-1.5">
-              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-tight">চোখের আলো</span>
+              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-tight">Chokher Alo</span>
               <span class="text-brand-500 font-bold text-xl leading-none">•</span>
             </div>
-            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">রেটিনা গ্লুকোমা হাসপাতাল এন্ড ফ্যাকো সেন্টার</p>
+            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">Retina Glaucoma Hospital & Phaco Center</p>
           </div>
         </a>
 
         <!-- Desktop Navigation Links -->
         <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
-          <a href="#services" class="hover:text-brand-600 transition py-2">বিভাগসমূহ (Specialties)</a>
-          <a href="#lasik-cataract" class="hover:text-brand-600 transition py-2">SMILE & Phaco Surgery</a>
-          <a href="#specialists" class="hover:text-brand-600 transition py-2">চিকিৎসকবৃন্দ (Doctors)</a>
-          <a href="#pricing" class="hover:text-brand-600 transition py-2">প্যাকেজ ও খরচ (Fees)</a>
-          <a href="#vision-checker" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
+          <a href="index.html" class="hover:text-brand-600 transition py-2">Home</a>
+          <a href="about.html" class="hover:text-brand-600 transition py-2">About</a>
+                    <a href="#vision-checker" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
             <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
-            Online Vision Check
+           Free Champ
           </a>
-          <a href="#contact" class="hover:text-brand-600 transition py-2">শাখাসমূহ (Branches)</a>
+          <a href="#specialists" class="hover:text-brand-600 transition py-2">Services</a>
+          <a href="#contact" class="hover:text-brand-600 transition py-2">Contact</a>
+          <a href="#pricing" class="hover:text-brand-600 transition py-2">Donation</a>
         </nav>
 
         <!-- CTA & Fast Actions -->
         <div class="hidden sm:flex items-center space-x-3">
           <button onclick="openAppointmentModal()" class="relative inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-700 hover:to-tealAccent-500 shadow-md shadow-brand-500/20 hover:shadow-glow transition-all duration-200 transform hover:-translate-y-0.5">
-            <i class="fa-regular fa-calendar-check mr-2"></i> সিরিয়াল নিন (Book Serial)
+            <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
           </button>
         </div>
 
         <!-- Mobile Menu Toggle Button -->
         <div class="flex lg:hidden items-center space-x-2">
           <button onclick="openAppointmentModal()" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 text-white sm:hidden">
-            সিরিয়াল
+            Book
           </button>
           <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Navigation">
             <i class="fa-solid fa-bars-staggered text-xl" id="menuIcon"></i>
@@ -146,26 +162,26 @@
     <!-- Mobile Navigation Drawer -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 transition-all">
       <div class="flex flex-col space-y-4 font-semibold text-slate-700">
-        <a href="#services" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">চিকিৎসা ও বিভাগসমূহ (Services)</a>
-        <a href="#lasik-cataract" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">ফ্যাকো ছানি ও স্মাইল লেজার (Phaco & SMILE)</a>
-        <a href="#specialists" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">চক্ষু বিশেষজ্ঞ ডাক্তারগণ (Specialists)</a>
-        <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">চিকিৎসা প্যাকেজ ও খরচ (Cost Guide)</a>
-        <a href="#vision-checker" onclick="toggleMobileMenu()" class="text-teal-700 hover:text-teal-800 py-1 font-bold">অনলাইন ভিশন টেস্ট (Vision Check)</a>
-        <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">ঠিকানা ও শাখাসমূহ (Locations)</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Services & Specialties</a>
+        <a href="#lasik-cataract" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Phaco & SMILE Laser</a>
+        <a href="#specialists" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Eye Specialists</a>
+        <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Packages & Cost Guide</a>
+        <a href="#vision-checker" onclick="toggleMobileMenu()" class="text-teal-700 hover:text-teal-800 py-1 font-bold">Online Vision Check</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Locations & Branches</a>
         <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
           <button onclick="openAppointmentModal(); toggleMobileMenu();" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md">
-            <i class="fa-solid fa-calendar-plus mr-2"></i> ডাক্তারের সিরিয়াল বুক করুন
+            <i class="fa-solid fa-calendar-plus mr-2"></i> Book Doctor Serial
           </button>
-          <a href="tel:09666710610" class="w-full py-2.5 text-center rounded-xl font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200">
-            <i class="fa-solid fa-phone text-brand-600 mr-2"></i> হেল্পলাইন: 01981-369393
+          <a href="tel:01981369393" class="w-full py-2.5 text-center rounded-xl font-semibold text-slate-800 bg-slate-100 hover:bg-slate-200">
+            <i class="fa-solid fa-phone text-brand-600 mr-2"></i> Helpline: 01981-369393
           </a>
         </div>
       </div>
     </div>
   </header>
-<!-- ... existing code ... -->
+
+  <!-- Hero Section -->
   <section class="relative hero-gradient pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
-    <!-- Subtle Background Shapes -->
     <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-200/40 blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-teal-100/60 blur-3xl pointer-events-none"></div>
 
@@ -180,54 +196,52 @@
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
             </span>
-            জার্মান প্রযুক্তির ব্লেড-লেস স্মাইল লেজার ও সেলাইবিহীন ফ্যাকো ছানি অপারেশন
+            German Bladeless SMILE Laser & Sutureless Phaco Cataract Surgery
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.18]">
-            আপনার দৃষ্টির নিখুঁত সুরক্ষায় <br class="hidden sm:inline">
-            <span class="bg-gradient-to-r from-brand-700 via-brand-600 to-tealAccent-600 bg-clip-text text-transparent">আন্তর্জাতিক মানের চক্ষু সেবা</span>
+            World-Class Eye Care <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-brand-700 via-brand-600 to-tealAccent-600 bg-clip-text text-transparent">For Perfect Vision Protection</span>
           </h1>
 
           <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            চোখের আলো রেটিনা গ্লুকোমা হসপিটাল অ্যান্ড ফ্যাকো সেন্টার (ঢাকা ও চট্টগ্রাম)-এ দেশবরেণ্য এফসিপিএস ও এফআরসিএস চক্ষু বিশেষজ্ঞ সার্জন, কার্ল জাইস রেটিনা ও গ্লুকোমা মাইক্রোসার্জারি এবং আমেরিকান সেন্টুরিয়ন ফ্যাকো প্রযুক্তির মাধ্যমে সুচিকিৎসা নিশ্চিত করছে।
+            Chokher Alo Retina Glaucoma Hospital & Phaco Center provides advanced treatments guided by renowned FCPS & FRCS eye specialists, featuring Carl Zeiss Retina & Glaucoma Microsurgery and American Centurion Phaco technology.
           </p>
 
           <!-- Action Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
             <button onclick="openAppointmentModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white bg-slate-900 hover:bg-brand-700 shadow-xl shadow-slate-900/15 transition duration-200 flex items-center justify-center gap-3">
-              <span>ডাক্তারের সিরিয়াল নিন</span>
+              <span>Book Doctor Serial</span>
               <i class="fa-solid fa-arrow-right text-sm"></i>
             </button>
             <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Hospital,%20I%20want%20to%20book%20a%20doctor%20serial" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-7 py-4 rounded-xl font-semibold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-300 shadow-sm transition duration-200 flex items-center justify-center gap-2">
               <i class="fa-brands fa-whatsapp text-emerald-600 text-lg"></i>
-              <span>হোয়াটসঅ্যাপে বুকিং</span>
+              <span>WhatsApp Booking</span>
             </a>
           </div>
 
           <!-- Trust Badges & Metrics -->
           <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 text-center lg:text-left">
             <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">৬৮,০০০+</p>
-              <p class="text-xs sm:text-sm text-slate-500 font-medium">সফল ফ্যাকো ও লেজার</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">68,000+</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">Successful Phaco & Lasers</p>
             </div>
             <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">৯৯.৬%</p>
-              <p class="text-xs sm:text-sm text-slate-500 font-medium">ক্লিনিক্যাল নির্ভুলতা</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">99.6%</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">Clinical Precision</p>
             </div>
             <div>
-              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">৩৮+</p>
-              <p class="text-xs sm:text-sm text-slate-500 font-medium">বিএমডিসি বিশেষজ্ঞ ডাক্তার</p>
+              <p class="text-2xl sm:text-3xl font-extrabold text-slate-900">38+</p>
+              <p class="text-xs sm:text-sm text-slate-500 font-medium">BMDC Specialist Doctors</p>
             </div>
           </div>
         </div>
 
-        <!-- Right Hero Visual Card with Autoplay Carl Zeiss VisuMax YouTube Video -->
+        <!-- Right Hero Visual Card -->
         <div class="lg:col-span-5 relative">
-          <!-- Glass card container -->
           <div class="relative mx-auto max-w-md lg:max-w-none bg-white p-3 rounded-3xl shadow-2xl border border-slate-100">
             <div class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-brand-900 to-slate-900 aspect-[4/5] flex items-end">
               
-              <!-- Autoplay Looping YouTube Video for Carl Zeiss VisuMax 800 -->
               <iframe 
                 class="absolute inset-0 w-full h-full object-cover scale-[1.35] pointer-events-none" 
                 src="https://www.youtube-nocookie.com/embed/k2fwFwmwj2Q?autoplay=1&mute=1&loop=1&playlist=k2fwFwmwj2Q&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1" 
@@ -237,19 +251,17 @@
                 allowfullscreen>
               </iframe>
               
-              <!-- Gradient Overlay for Contrast -->
               <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent pointer-events-none"></div>
 
-              <!-- Overlaid Highlight Card -->
               <div class="relative z-10 p-5 w-full">
-                <div class="glass-nav p-4 rounded-xl border border-white/60 shadow-lg text-slate-800 flex items-center justify-between backdrop-blur-md bg-white/90">
+                <div class="p-4 rounded-xl border border-white/60 shadow-lg text-slate-800 flex items-center justify-between backdrop-blur-md bg-white/90">
                   <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm animate-pulse">
                       <i class="fa-solid fa-play"></i>
                     </div>
                     <div>
                       <h4 class="font-bold text-xs sm:text-sm text-slate-900">Carl Zeiss VisuMax 800®</h4>
-                      <p class="text-[11px] text-slate-600">Dhaka's First SMILE Pro Center • লাইভ ডেমো</p>
+                      <p class="text-[11px] text-slate-600">Dhaka's First SMILE Pro Center • Live Demo</p>
                     </div>
                   </div>
                   <span class="text-xs bg-emerald-50 text-emerald-700 font-semibold px-2 py-1 rounded-md border border-emerald-200">
@@ -279,7 +291,7 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <span class="text-xs font-bold text-slate-900">4.9/5 (৪,৫০০+ রিভিউ)</span>
+              <span class="text-xs font-bold text-slate-900">4.9/5 (4,500+ Reviews)</span>
             </div>
           </div>
         </div>
@@ -288,88 +300,34 @@
     </div>
   </section>
 
-  <!-- Quick Action Strip with Localized Payment & Insurance -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10 relative z-20">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-      
-      <!-- Card 1 -->
-      <div onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="bg-white p-6 rounded-2xl shadow-card border border-slate-200/80 hover:border-brand-500 cursor-pointer transition duration-300 group hover:-translate-y-1">
-        <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl group-hover:bg-brand-600 group-hover:text-white transition">
-          <i class="fa-solid fa-calendar-check"></i>
-        </div>
-        <h3 class="font-bold text-slate-900 text-lg mt-4 group-hover:text-brand-600 transition">ডাক্তার অ্যাপয়েন্টমেন্ট</h3>
-        <p class="text-slate-500 text-xs sm:text-sm mt-1">ধানমন্ডি, উত্তরা ও বনানী শাখায় প্রতিদিন বিশেষজ্ঞ কনসাল্টেশন।</p>
-        <div class="mt-4 flex items-center text-xs font-bold text-brand-600 group-hover:translate-x-1 transition">
-          সিরিয়াল নিন <i class="fa-solid fa-chevron-right text-[10px] ml-1.5"></i>
-        </div>
-      </div>
-
-      <!-- Card 2 -->
-      <a href="#lasik-cataract" class="bg-white p-6 rounded-2xl shadow-card border border-slate-200/80 hover:border-teal-500 cursor-pointer transition duration-300 group hover:-translate-y-1 block">
-        <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl group-hover:bg-teal-600 group-hover:text-white transition">
-          <i class="fa-solid fa-glasses"></i>
-        </div>
-        <h3 class="font-bold text-slate-900 text-lg mt-4 group-hover:text-teal-600 transition">চশমা মুক্তি (SMILE / LASIK)</h3>
-        <p class="text-slate-500 text-xs sm:text-sm mt-1">ফ্রি প্রি-লেসিক ফিটনেস স্ক্রিনিং ও সহজ কিস্তি সুবিধা।</p>
-        <div class="mt-4 flex items-center text-xs font-bold text-teal-600 group-hover:translate-x-1 transition">
-          যোগ্যতা পরীক্ষা করুন <i class="fa-solid fa-chevron-right text-[10px] ml-1.5"></i>
-        </div>
-      </a>
-
-      <!-- Card 3 -->
-      <a href="tel:09666710610" class="bg-rose-50/70 p-6 rounded-2xl shadow-card border border-rose-200 hover:border-rose-400 cursor-pointer transition duration-300 group hover:-translate-y-1 block">
-        <div class="w-12 h-12 rounded-xl bg-rose-500 text-white flex items-center justify-center text-xl shadow-md shadow-rose-500/20">
-          <i class="fa-solid fa-truck-medical"></i>
-        </div>
-        <h3 class="font-bold text-rose-950 text-lg mt-4">২৪/৭ জরুরী চক্ষু বিভাগ</h3>
-        <p class="text-rose-800 text-xs sm:text-sm mt-1">চোখে আকস্মিক আঘাত, কেমিক্যাল স্প্ল্যাশ বা হঠাৎ দৃষ্টিহীনতায় অবিলম্বে কল করুন।</p>
-        <div class="mt-4 flex items-center text-xs font-bold text-rose-600">
-          জরুরী হটলাইন 01981-369393 <i class="fa-solid fa-phone text-[10px] ml-1.5"></i>
-        </div>
-      </a>
-
-      <!-- Card 4 -->
-      <div onclick="openInsuranceModal()" class="bg-white p-6 rounded-2xl shadow-card border border-slate-200/80 hover:border-brand-500 cursor-pointer transition duration-300 group hover:-translate-y-1">
-        <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl group-hover:bg-indigo-600 group-hover:text-white transition">
-          <i class="fa-solid fa-credit-card"></i>
-        </div>
-        <h3 class="font-bold text-slate-900 text-lg mt-4 group-hover:text-indigo-600 transition">ক্যাশলেস ইন্স্যুরেন্স ও bKash</h3>
-        <p class="text-slate-500 text-xs sm:text-sm mt-1">MetLife, Green Delta, Guardian Life ও ০% EMI বিকাশ/কার্ড সুবিধা।</p>
-        <div class="mt-4 flex items-center text-xs font-bold text-indigo-600 group-hover:translate-x-1 transition">
-          বীমা তালিকা দেখুন <i class="fa-solid fa-chevron-right text-[10px] ml-1.5"></i>
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!-- ... existing code ... -->
+  <!-- Specialists Section -->
   <section id="specialists" class="py-24 bg-slate-100/70 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3 py-1 rounded-full">আমাদের চিকিৎসকবৃন্দ</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3 py-1 rounded-full">Our Medical Panel</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
-            বিএমডিসি নিবন্ধিত দেশবরেণ্য চক্ষু বিশেষজ্ঞ সার্জনগণ
+            BMDC Registered Senior Ophthalmic Surgeons
           </h2>
           <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-xl">
-            জাতীয় চক্ষু বিজ্ঞান ইনস্টিটিউট (NIO&H), বারডেম ও আন্তর্জাতিক খ্যাতিসম্পন্ন ফেলোশিপপ্রাপ্ত কনসালটেন্টদের তত্ত্বাবধানে চোখের সুচিকিৎসা নিন।
+            Receive specialized eye care supervised by fellowship-trained consultants from National Institute of Ophthalmology (NIO&H), BIRDEM & international institutions.
           </p>
         </div>
 
         <div class="flex items-center space-x-2">
-          <span class="text-xs font-semibold text-slate-500 mr-2">বিভাগ নির্বাচন করুন:</span>
+          <span class="text-xs font-semibold text-slate-500 mr-2">Select Specialty:</span>
           <select id="doctorFilter" onchange="filterDoctors(this.value)" class="bg-white border border-slate-300 rounded-xl px-4 py-2 text-xs font-semibold text-slate-700 focus:ring-2 focus:ring-brand-500 focus:outline-none">
-            <option value="all">সকল স্পেশালিস্ট (All Specialists)</option>
-            <option value="cornea">কর্নিয়া ও লেসিক (Cornea & LASIK)</option>
-            <option value="cataract">ফ্যাকো ছানি অপারেশন (Cataract)</option>
-            <option value="retina">রেটিনা ও ডায়াবেটিক চোখ (Retina)</option>
-            <option value="pediatric">শিশু চক্ষু ও ট্যারা চোখ (Pediatric)</option>
+            <option value="all">All Specialists</option>
+            <option value="cornea">Cornea & LASIK</option>
+            <option value="cataract">Cataract & Phaco</option>
+            <option value="retina">Retina & Diabetic Eye</option>
+            <option value="pediatric">Pediatric Eye Care & Squint</option>
           </select>
         </div>
       </div>
 
-      <!-- Doctor Cards Grid (Bangladeshi Specialists) -->
+      <!-- Doctor Cards Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="doctorsGrid">
         
         <!-- Doctor 1: Cornea & LASIK -->
@@ -377,7 +335,7 @@
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" 
+                src="https://i.postimg.cc/QxBgCHHX/b41ec73e-7a8b-4500-b957-ba3d751cb4df.jpg" 
                 alt="Prof. Dr. Tariqul Islam, Chief Cornea & Refractive Surgeon" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80'"
@@ -387,17 +345,18 @@
               </span>
             </div>
             <div class="p-6">
-              <h3 class="font-bold text-lg text-slate-900">অধ্যাপক ডা. তারিকুল ইসলাম</h3>
-              <p class="text-brand-600 font-semibold text-xs">MBBS, FCPS (Eye), Fellow Cornea & SMILE (UK)</p>
-              <p class="text-slate-500 text-xs mt-2">চিফ রিফ্র্যাক্টিভ ও কর্নিয়া সার্জন। দেশে ১৫,০০০+ সফল স্মাইল ও ল্যাসিক লেজার সম্পন্ন করেছেন।</p>
+              <h3 class="font-bold text-lg text-slate-900">Dr. Md. Shakib Hossain</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Surgeon MBBS, MPH (Epidemiology) CCD, PGT (Ophthalmology)</p>
+              <p class="text-slate-500 text-xs mt-2">National Institute of Ophthalmology & Hospital
+Sher-e-Bangla Nagar, Dhaka.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
-                ভিজিট: ৳১,৫০০ (ধানমন্ডি)
+                Fee: ৳200 (Bhola, Sadar)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
             <button onclick="openAppointmentModal('Prof. Dr. Tariqul Islam - Cornea & LASIK')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
-              সিরিয়াল নিন (Book Serial)
+              Book Serial
             </button>
           </div>
         </div>
@@ -407,7 +366,7 @@
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80" 
+                src="https://i.postimg.cc/BbP8SPN7/76fde162-4920-4372-a95b-b34fb7232b75.jpg" 
                 alt="Dr. Farzana Rahman, Vitreo-Retina Specialist" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80'"
@@ -417,17 +376,17 @@
               </span>
             </div>
             <div class="p-6">
-              <h3 class="font-bold text-lg text-slate-900">ডা. ফারজানা রহমান</h3>
-              <p class="text-brand-600 font-semibold text-xs">MBBS, MS (Ophthalmology), Fellow Retina (Aravind)</p>
-              <p class="text-slate-500 text-xs mt-2">সিনিয়র ভিভ্রেও-রেটিনা স্পেশালিস্ট। ডায়াবেটিক রেটিনোপ্যাথি ও লেজার চিকিৎসায় অভিজ্ঞ।</p>
+              <h3 class="font-bold text-lg text-slate-900">Dr. Md. Asaduzzaman</h3>
+              <p class="text-brand-600 font-semibold text-xs">Assistant Professor Eye Specialist & Surgeon MBBS, FCPS Specialization: Phaco, LASIK & Refractive Surgery</p>
+              <p class="text-slate-500 text-xs mt-2">Senior Vitreo-Retina Specialist. Highly experienced in Diabetic Retinopathy and Retina Laser procedures.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
-                ভিজিট: ৳১,২০০ (উত্তরা)
+                Fee: ৳1,200 (Uttara)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
             <button onclick="openAppointmentModal('Dr. Farzana Rahman - Retina Specialist')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
-              সিরিয়াল নিন (Book Serial)
+              Book Serial
             </button>
           </div>
         </div>
@@ -437,7 +396,7 @@
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" 
+                src="https://i.postimg.cc/6QRkQywx/Gemini-Generated-Image-50ea3650ea3650ea.jpg" 
                 alt="Dr. Kazi Shahed Ahmed, Phaco Cataract Surgeon" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80'"
@@ -447,17 +406,17 @@
               </span>
             </div>
             <div class="p-6">
-              <h3 class="font-bold text-lg text-slate-900">ডা. কাজী শাহেদ আহমেদ</h3>
-              <p class="text-brand-600 font-semibold text-xs">MBBS, FCPS (Eye), FICO (Tokyo), Cataract Fellow</p>
-              <p class="text-slate-500 text-xs mt-2">মাইক্রো-ইনসিশন সেলাইবিহীন ফ্যাকো ছানি অপারেশন এবং প্রিমিয়াম মাল্টিফোকাল লেন্স বিশেষজ্ঞ।</p>
+              <h3 class="font-bold text-lg text-slate-900">Dr. Md. Shahriar Rajon Raju</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Phaco Surgeon MBBS (DU), DO (BSMMU) Fellowship in Medical Retina (Aravind, India)</p>
+              <p class="text-slate-500 text-xs mt-2">Trained in ROP (BSMMU) Consultant (Ophthalmology) SKS Eye Hospital, Gaibandha.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
-                ভিজিট: ৳১,২০০ (বনানী)
+                Fee: ৳1,200 (Banani)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
             <button onclick="openAppointmentModal('Dr. Kazi Shahed Ahmed - Cataract & Phaco')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
-              সিরিয়াল নিন (Book Serial)
+              Book Serial
             </button>
           </div>
         </div>
@@ -467,7 +426,7 @@
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" 
+                src="https://i.postimg.cc/nrMTCP7f/Gemini-Generated-Image-42jmv42jmv42jmv4.jpg" 
                 alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
@@ -477,35 +436,129 @@
               </span>
             </div>
             <div class="p-6">
-              <h3 class="font-bold text-lg text-slate-900">ডা. নুসরাত জাহান</h3>
-              <p class="text-brand-600 font-semibold text-xs">MBBS, DO, FCPS (Eye), Pediatric Fellow (LVPEI)</p>
-              <p class="text-slate-500 text-xs mt-2">শিশু চক্ষু রোগ, ট্যারা চোখ (Squint), অলস চোখ (Amblyopia) ও জন্মগত ছানি চিকিৎসার বিশেষ ফেলো।</p>
+              <h3 class="font-bold text-lg text-slate-900">Dr. A.K.M. Shamiul Haque</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Microsurgeon MBBS, DO, MPH Long-Term Fellowship in Orbit & Oculoplasty Dwip Eye Care Foundation</p>
+              <p class="text-slate-500 text-xs mt-2">Consultant (Ophthalmology) Chokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
-                ভিজিট: ৳১,০০০ (ধানমন্ডি)
+                Fee: ৳1,000 (Dhanmondi)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
             <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
-              সিরিয়াল নিন (Book Serial)
+              Book Serial
             </button>
           </div>
         </div>
+
+        
+        <!-- Doctor 4: Pediatric & Squint -->
+        <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
+          <div>
+            <div class="relative aspect-square overflow-hidden bg-slate-100">
+              <img 
+                src="https://i.postimg.cc/DzBqLc7Q/Gemini-Generated-Image-tscgkytscgkytscg.jpg" 
+                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-800 text-[11px] font-bold px-2.5 py-1 rounded-lg">
+                BMDC: A-42118
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-lg text-slate-900">Dr. Md. Shamim Hossain</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Microsurgeon MBBS (Dhaka) DO (BSMMU)</p>
+              <p class="text-slate-500 text-xs mt-2">Eye Specialist & Surgeon atChokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
+              <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
+                Fee: ৳1,000 (Dhanmondi)
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        
+        <!-- Doctor 4: Pediatric & Squint -->
+        <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
+          <div>
+            <div class="relative aspect-square overflow-hidden bg-slate-100">
+              <img 
+                src="https://i.postimg.cc/Kcgbh2D9/2d840bcb-e5b0-46b0-8ac0-129bc7dfd189.jpg" 
+                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-800 text-[11px] font-bold px-2.5 py-1 rounded-lg">
+                BMDC: A-42118
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-lg text-slate-900">Dr. Alamin</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist MBBS PGT (Ophthalmology)</p>
+              <p class="text-slate-500 text-xs mt-2">Medical Officer Chokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
+              <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
+                Fee: ৳1,000 (Dhanmondi)
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+          <!-- Doctor 4: Pediatric & Squint -->
+        <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
+          <div>
+            <div class="relative aspect-square overflow-hidden bg-slate-100">
+              <img 
+                src="https://i.postimg.cc/C1G4bdVG/500b38a2-8ea7-4ec4-ba54-91ed700c5fd5.jpg" 
+                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
+                onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
+              />
+              <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md text-brand-800 text-[11px] font-bold px-2.5 py-1 rounded-lg">
+                BMDC: A-42118
+              </span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-bold text-lg text-slate-900">Dr.Md.Masud  Rana</h3>
+              <p class="text-brand-600 font-semibold text-xs">Eye Specialist MBBS PGT (Ophthalmology)</p>
+              <p class="text-slate-500 text-xs mt-2">Medical Officer Chokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
+              <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
+                Fee: ৳1,000 (Dhanmondi)
+              </div>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2">
+            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        
 
       </div>
     </div>
   </section>
 
-  <!-- Transparent Bangladeshi Pricing / Package Cost Guide -->
+  <!-- Pricing / Package Cost Guide -->
   <section id="pricing" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">স্বচ্ছ প্যাকেজ ও মূল্যতালিকা</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Transparent Pricing</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
-          সাশ্রয়ী ও স্বচ্ছ চিকিৎসা প্যাকেজ (৳ BDT)
+          Affordable Treatment Packages (৳ BDT)
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          কোনো লুকানো খরচ নেই। ক্যাটারাক্ট লেন্স ও লেজার পদ্ধতির ওপর ভিত্তি করে নির্দিষ্ট প্যাকেজ।
+          No hidden fees. All-inclusive surgical packages tailored by lens type and laser technique.
         </p>
       </div>
 
@@ -514,165 +567,164 @@
         <!-- Package 1 -->
         <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition">
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">স্ট্যান্ডার্ড প্যাকেজ</span>
-            <h3 class="text-2xl font-black text-slate-900 mt-2">আলকন ফ্যাকো ছানি অপারেশন</h3>
-            <p class="text-xs text-slate-500 mt-2">আমেরিকান আলকন ফোল্ডেবল মনফোকাল ইন্ট্রাওকুলার লেন্স (IOL) সহ ডে-কেয়ার সার্জারি।</p>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Standard Package</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">Alcon Phaco Cataract Surgery</h3>
+            <p class="text-xs text-slate-500 mt-2">Day-care surgery featuring American Alcon Foldable Monofocal Intraocular Lens (IOL).</p>
             <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳২৮,০০০</span>
-              <span class="text-slate-500 text-xs">/ প্রতি চোখ থেকে শুরু</span>
+              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳28,000</span>
+              <span class="text-slate-500 text-xs">/ starting per eye</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-700">
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> আলকন এক্রাইলিক হাইড্রোফোবিক লেন্স</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> সেলাইবিহীন মাত্র ২.২ মিমি মাইক্রো-ছেদ</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> অস্ত্রোপচারের ২ ঘণ্টার মধ্যে বাড়ি ফেরা</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> প্রথম ১টি পোস্ট-অপ ফলোআপ বিনামূল্যে</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Alcon Acrylic Hydrophobic Lens</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Sutureless 2.2mm Micro-incision</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Discharge within 2 hours of procedure</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 1st Post-operative follow-up free</li>
             </ul>
           </div>
           <button onclick="openAppointmentModal('Phaco Cataract Inquiry')" class="mt-8 w-full py-3 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
-            প্যাকেজ বুক করুন
+            Book Package
           </button>
         </div>
 
         <!-- Package 2: Most Popular -->
         <div class="bg-gradient-to-b from-brand-900 to-slate-900 text-white p-8 rounded-3xl border-2 border-tealAccent-500 relative flex flex-col justify-between shadow-2xl">
           <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-900 text-[10px] font-black uppercase px-3 py-1 rounded-full">
-            সর্বাধিক জনপ্রিয় (Most Chosen)
+            Most Chosen
           </div>
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-teal-300">জার্মান প্রযুক্তি</span>
-            <h3 class="text-2xl font-black text-white mt-2">কার্ল জাইস SMILE Pro®</h3>
-            <p class="text-xs text-slate-300 mt-2">ব্লেড-লেস, ফ্ল্যাপ-লেস ১০ সেকেন্ডের চোখের চশমা রিমুভাল লেজার পদ্ধতি।</p>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-300">German Technology</span>
+            <h3 class="text-2xl font-black text-white mt-2">Carl Zeiss SMILE Pro®</h3>
+            <p class="text-xs text-slate-300 mt-2">Bladeless, flapless 10-second laser vision correction for total glass removal.</p>
             <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-teal-300">৳১,১০,০০০</span>
-              <span class="text-slate-400 text-xs">/ উভয় চোখ (Both Eyes)</span>
+              <span class="text-3xl sm:text-4xl font-extrabold text-teal-300">৳1,10,000</span>
+              <span class="text-slate-400 text-xs">/ Both Eyes</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-200">
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> ১০০% ব্লেডহীন ও কোনো ফ্ল্যাপ কাটা হয় না</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> ২৪ ঘণ্টার মধ্যে স্বাভাবিক কাজে প্রত্যাবর্তন</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> বিকাশ ও ক্রেডিট কার্ডে ০% ইএমআই সুবিধা</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> প্রি-সার্জারি কর্নিয়া টপোগ্রাফি টেস্ট অন্তর্ভুক্ত</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 100% Bladeless & Flapless procedure</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Resume normal work within 24 hours</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 0% EMI available on bKash & Credit Cards</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Pre-surgery Corneal Topography included</li>
             </ul>
           </div>
           <button onclick="openAppointmentModal('SMILE Pro Package')" class="mt-8 w-full py-3 rounded-xl bg-tealAccent-500 hover:bg-tealAccent-600 text-slate-950 font-bold text-xs transition shadow-lg">
-            লেসিক মূল্যায়ন টেস্ট বুক করুন
+            Book LASIK Evaluation Test
           </button>
         </div>
 
         <!-- Package 3 -->
         <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition">
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">প্রিমিয়াম দৃষ্টি</span>
-            <h3 class="text-2xl font-black text-slate-900 mt-2">মাল্টিফোকাল ট্রাইফোকাল লেন্স</h3>
-            <p class="text-xs text-slate-500 mt-2">কাছের, মধ্যবর্তী ও দূরের সবকিছু চশমা ছাড়া পরিষ্কার দেখার জন্য আলকন প্যানঅপটিক্স বা জাইস ট্রাইফোকাল।</p>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Premium Vision</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">Multifocal Trifocal IOL</h3>
+            <p class="text-xs text-slate-500 mt-2">Clear distance, intermediate, and near vision without reading glasses via Alcon PanOptix or Zeiss Trifocal lenses.</p>
             <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳৬৫,০০০ - ৳৯৫,০০০</span>
-              <span class="text-slate-500 text-xs">/ প্রতি চোখ</span>
+              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳65,000 - ৳95,000</span>
+              <span class="text-slate-500 text-xs">/ per eye</span>
             </div>
             <ul class="space-y-2.5 text-xs text-slate-700">
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> পড়ার ও কম্পিউটার কাজের চশমা থেকে মুক্তি</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Complete freedom from reading glasses</li>
               <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Alcon PanOptix® / Zeiss AT LISA® IOL</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> টরিক সিলিন্ডার পাওয়ার সমন্বয় সুবিধা</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> ৩ মাসের পোস্ট-অপ মনিটরিং অন্তর্ভুক্ত</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Toric cylinder correction option</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 3 months post-op monitoring included</li>
             </ul>
           </div>
           <button onclick="openAppointmentModal('Premium Trifocal IOL Inquiry')" class="mt-8 w-full py-3 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
-            কনসালটেশন নিন
+            Book Consultation
           </button>
         </div>
 
       </div>
     </div>
   </section>
-<!-- ... existing code ... -->
+
+  <!-- FAQ Section -->
   <section class="py-20 bg-slate-50 border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-12">
-        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3 py-1 rounded-full">সাধারণ জিজ্ঞাসা</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-3">রোগীদের সচরাচর জিজ্ঞাসিত প্রশ্ন ও উত্তর</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3 py-1 rounded-full">Common Questions</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Frequently Asked Questions</h2>
       </div>
 
       <div class="space-y-3">
         <!-- FAQ 1 -->
         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
           <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center focus:outline-none">
-            <span>ক্যাটারাক্ট বা ছানি অপারেশনে কি কোনো ব্যথা অনুভূত হয় বা সেলাই লাগে?</span>
+            <span>Is Phaco cataract surgery painful or does it require stitches?</span>
             <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="faqIcon1"></i>
           </button>
           <div id="faqContent1" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            না। আধুনিক ফ্যাকো (Phacoemulsification) পদ্ধতিতে কোনো ইনজেকশন বা সুচ ছাড়াই শুধুমাত্র ড্রপের সাহায্যে চোখের অনুভূতি অবশ করা হয়। মাত্র ১০-১৫ মিনিটের এই অপারেশনে কোনো সেলাই লাগে না এবং রোগী কোনো ব্যথা অনুভব করেন না।
+            No. Modern Phaco (Phacoemulsification) uses topical anesthetic eye drops without injections or needles. The 10–15 minute procedure requires no sutures, and patients experience no pain.
           </div>
         </div>
 
         <!-- FAQ 2 -->
         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
           <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center focus:outline-none">
-            <span>স্মাইল (SMILE Pro) বা ল্যাসিক করার পর রোগী কত দ্রুত স্বাভাবিক কাজে ফিরতে পারেন?</span>
+            <span>How quickly can I resume work after SMILE Pro or LASIK?</span>
             <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="faqIcon2"></i>
           </button>
           <div id="faqContent2" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            স্মাইল প্রো পদ্ধতিতে কর্নিয়ার ওপর কোনো ফ্ল্যাপ কাটা হয় না বলে রোগীরা ২৪ থেকে ৪৮ ঘণ্টার মধ্যেই মোবাইল, ল্যাপটপ ব্যবহার ও নিজ নিজ অফিসে স্বাভাবিকভাবে কাজ করতে পারেন।
+            Since SMILE Pro involves no corneal flap creation, patients can resume work, screen time, and normal daily activities within 24 to 48 hours.
           </div>
         </div>
 
         <!-- FAQ 3 -->
         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
           <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center focus:outline-none">
-            <span>কোন কোন ইন্স্যুরেন্স কোম্পানি ও ব্যাংকের সুবিধা পাওয়া যাবে?</span>
+            <span>Which health insurance companies and EMI payment options are accepted?</span>
             <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="faqIcon3"></i>
           </button>
           <div id="faqContent3" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            আমাদের হাসপাতালে মেটলাইফ (MetLife Bangladesh), গ্রিন ডেল্টা (Green Delta), গার্ডিয়ান লাইফ, প্রগতি লাইফ এবং ডেল্টা লাইফের কর্পোরেট হেলথ কার্ডধারীরা সরাসরি ক্যাশলেস ভর্তি সুবিধা পান। এছাড়া বিকাশ, নগদ ও সিটি/ইস্টার্ন ব্যাংকের কার্ডে ৩ থেকে ১২ মাসের ০% কিস্তির সুবিধা বিদ্যমান।
+            We offer cashless admissions for cardholders of MetLife Bangladesh, Green Delta, Guardian Life, Pragati Life, and Delta Life. Additionally, 3 to 12 months 0% EMI is available on bKash, Nagad, and leading bank credit cards.
           </div>
         </div>
 
         <!-- FAQ 4 -->
         <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
           <button onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left font-bold text-slate-800 flex justify-between items-center focus:outline-none">
-            <span>ডায়াবেটিস রোগীদের চোখের পরীক্ষা কতদিন পর পর করানো উচিত?</span>
+            <span>How frequently should diabetic patients undergo eye checks?</span>
             <i class="fa-solid fa-chevron-down text-xs text-slate-400 transition-transform duration-200" id="faqIcon4"></i>
           </button>
           <div id="faqContent4" class="hidden px-6 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-            ডায়াবেটিসের কারণে চোখের রেটিনায় রক্তক্ষরণ বা ডায়াবেটিক রেটিনোপ্যাথি প্রাথমিক অবস্থায় কোনো লক্ষণ প্রকাশ করে না। তাই দৃষ্টি ভালো থাকলেও প্রত্যেক ডায়াবেটিস রোগীর প্রতি ৬ থেকে ১২ মাসে অন্তত একবার চোখ ডাইলেশন করে রেটিনা ও ফান্ডাস পরীক্ষা করানো আবশ্যক।
+            Diabetic Retinopathy often shows no initial symptoms. Therefore, every diabetic patient should have a dilated retinal and fundus exam at least once every 6 to 12 months, even if vision seems normal.
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- YouTube Video Gallery (Horizontal Auto-Scrolling 10+ Videos) -->
+  <!-- YouTube Video Gallery -->
   <section id="video-gallery" class="py-20 bg-slate-900 text-white relative overflow-hidden">
-    <!-- Subtle Background Glows -->
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-600/10 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 left-10 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
-      <!-- Section Header with Controls -->
+      <!-- Section Header -->
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-6">
         <div>
           <span class="text-xs font-bold uppercase tracking-widest text-teal-400 bg-teal-950/70 border border-teal-500/30 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2">
             <i class="fa-brands fa-youtube text-rose-500 text-sm"></i>
-            ভিডিও লাইব্রেরি (১০টি বিশেষায়িত ভিডিও)
+            Video Library (10 Specialized Videos)
           </span>
           <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mt-3 tracking-tight">
-            সরাসরি দেখুন আধুনিক চোখের অপারেশন ও বিশেষজ্ঞদের পরামর্শ
+            Watch Advanced Eye Surgeries & Expert Consultations
           </h2>
           <p class="text-slate-400 text-xs sm:text-sm mt-2 max-w-2xl">
-            ভিডিওগুলো স্বয়ংক্রিয়ভাবে স্ক্রোল হচ্ছে। যেকোনো ভিডিও দেখতে কার্সার রাখুন বা ক্লিক করে সরাসরি প্লে করুন।
+            Videos auto-scroll horizontally. Hover or click on any video to play directly.
           </p>
         </div>
 
-        <!-- Auto-scroll indicator & Manual Scroll Controls -->
         <div class="flex items-center gap-3 self-start md:self-auto">
           <button id="toggleScrollBtn" onclick="toggleAutoScrollState()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 border border-slate-700 flex items-center gap-2 transition">
             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" id="scrollStatusDot"></span>
-            <span id="scrollStatusText">অটো-স্ক্রোল চলছে</span>
+            <span id="scrollStatusText">Auto-scroll Active</span>
           </button>
           <div class="flex items-center gap-2">
-            <button onclick="scrollVideoTrack('left')" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center border border-slate-700 transition active:scale-95" title="পূর্ববর্তী ভিডিও">
+            <button onclick="scrollVideoTrack('left')" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center border border-slate-700 transition active:scale-95" title="Previous Video">
               <i class="fa-solid fa-chevron-left text-sm"></i>
             </button>
-            <button onclick="scrollVideoTrack('right')" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center border border-slate-700 transition active:scale-95" title="পরবর্তী ভিডিও">
+            <button onclick="scrollVideoTrack('right')" class="w-10 h-10 rounded-xl bg-slate-800 hover:bg-brand-600 text-white flex items-center justify-center border border-slate-700 transition active:scale-95" title="Next Video">
               <i class="fa-solid fa-chevron-right text-sm"></i>
             </button>
           </div>
@@ -689,7 +741,7 @@
         ontouchend="resumeVideoAutoScrollDelayed()"
       >
 
-        <!-- Video 1: SMILE Pro Carl Zeiss VisuMax 800 -->
+        <!-- Video 1 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-teal-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -706,27 +758,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-teal-500/20 text-teal-300 px-2 py-0.5 rounded border border-teal-500/30">
-                  ১. কার্ল জাইস লেসিক
+                  1. Zeiss LASIK
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>২:১৫ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>2:15 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-teal-400 transition leading-snug line-clamp-2">
-                ZEISS VisuMax 800®: ১০ সেকেন্ডে ব্লেডহীন স্মাইল প্রো লেজার সার্জারি
+                ZEISS VisuMax 800®: 10-Second Bladeless SMILE Pro Laser Surgery
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                ফ্ল্যাপ বা সেলাই ছাড়া চশমার পাওয়ার স্থায়ী অপসারণের সবচেয়ে নিরাপদ জার্মান প্রযুক্তি।
+                The safest German technology for permanent removal of refractive power without flaps or stitches.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-teal-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> ১০০% ব্লেডহীন</span>
+            <span class="text-[11px] text-teal-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> 100% Bladeless</span>
             <button onclick="openAppointmentModal('SMILE Pro Package')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              সিরিয়াল নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Book Serial <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 2: Phaco Cataract Surgery 3D Animation -->
+        <!-- Video 2 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-brand-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -743,34 +795,34 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-brand-500/20 text-brand-300 px-2 py-0.5 rounded border border-brand-500/30">
-                  ২. ফ্যাকো সার্জারি
+                  2. Phaco Surgery
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>৩:০০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>3:00 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-brand-400 transition leading-snug line-clamp-2">
-                সেলাইবিহীন ফ্যাকো ছানি অপারেশন ও কৃত্রিম ফোল্ডেবল লেন্স প্রতিস্থাপন
+                Sutureless Phaco Cataract Surgery & Artificial Foldable IOL Implantation
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                মাত্র ২.২ মিমি মাইক্রো ইনসিশনে আল্ট্রাসাউন্ড তরঙ্গের মাধ্যমে লেন্স স্থাপন অ্যানিমেশন।
+                3D animation demonstrating ultrasound lens removal through a tiny 2.2mm micro-incision.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-brand-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> সেলাইমুক্ত ডে-কেয়ার</span>
+            <span class="text-[11px] text-brand-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Sutureless Day-care</span>
             <button onclick="openAppointmentModal('Phaco Cataract Inquiry')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Learn More <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 3: Post Cataract Surgery Care (Bangla) -->
+        <!-- Video 3 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-amber-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
               <iframe 
                 class="w-full h-full" 
                 src="https://www.youtube-nocookie.com/embed/ojDlI4tOKvU?rel=0&modestbranding=1" 
-                title="চোখের ছানি অপারেশনের পর সতর্কতা ও করনীয় - Post Cataract Surgery Care" 
+                title="Post Cataract Surgery Care" 
                 frameborder="0" 
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -780,27 +832,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 px-2 py-0.5 rounded border border-amber-500/30">
-                  ৩. রোগীর যত্ন (বাংলা)
+                  3. Patient Care
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>৪:২০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>4:20 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-amber-400 transition leading-snug line-clamp-2">
-                চোখের ছানি অপারেশনের পর রোগীর সতর্কতা ও ড্রপ ব্যবহারের নিয়ম
+                Post-Cataract Surgery Precautions & Eye Drop Guidelines
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                অপারেশন শেষে দ্রুত আরোগ্য লাভ করতে চোখ ধোয়া, শোয়ার নিয়ম ও ড্রপ প্রয়োগ নির্দেশিকা।
+                Essential instructions on hygiene, sleeping positions, and medication for smooth recovery.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-amber-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> বাংলা পরামর্শ</span>
-            <a href="tel:09666710610" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              হেল্পলাইন <i class="fa-solid fa-phone text-[10px] ml-1"></i>
+            <span class="text-[11px] text-amber-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Post-Op Guide</span>
+            <a href="tel:01981369393" class="text-xs font-bold text-brand-400 hover:text-white transition">
+              Helpline <i class="fa-solid fa-phone text-[10px] ml-1"></i>
             </a>
           </div>
         </div>
 
-        <!-- Video 4: Diabetic Retinopathy & Anti-VEGF / Laser -->
+        <!-- Video 4 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-rose-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -817,27 +869,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-rose-500/20 text-rose-300 px-2 py-0.5 rounded border border-rose-500/30">
-                  ৪. রেটিনা বিভাগ
+                  4. Retina Care
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>২:৪৫ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>2:45 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-rose-400 transition leading-snug line-clamp-2">
-                ডায়াবেটিক রেটিনোপ্যাথি ও লেজার দ্বারা রেটিনা সুরক্ষার আধুনিক চিকিৎসা
+                Diabetic Retinopathy & Advanced Green Laser Protection
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                ডায়াবেটিসে চোখের রেটিনায় রক্তক্ষরণ রোধে ইন্ট্রাভিট্রিয়াল ইনজেকশন ও গ্রিন লেজার থেরাপি।
+                Intravitreal anti-VEGF injections and laser therapy to prevent retinal bleeding in diabetes.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-rose-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> রেটিনা ও ওসিটি টেস্ট</span>
+            <span class="text-[11px] text-rose-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Retina & OCT Scan</span>
             <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              সিরিয়াল নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Book Serial <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 5: LASIK vs SMILE Comparison Guide -->
+        <!-- Video 5 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-indigo-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -854,27 +906,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-indigo-500/20 text-indigo-300 px-2 py-0.5 rounded border border-indigo-500/30">
-                  ৫. গাইড ও সচেতনতা
+                  5. LASIK vs SMILE
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>৩:১৫ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>3:15 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-indigo-400 transition leading-snug line-clamp-2">
-                ল্যাসিক (LASIK) বনাম স্মাইল (SMILE): আপনার চোখের জন্য কোনটি সেরা?
+                LASIK vs SMILE Pro: Which Laser Surgery is Best for You?
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                উভয় পদ্ধতির পার্থক্য, কর্নিয়ার পুরুত্ব ও আরোগ্য লাভের সময়ের তুলনামূলক বিশ্লেষণ।
+                Comparative analysis of procedures, corneal thickness requirements, and recovery times.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-indigo-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> কর্নিয়া ফিটনেস টেস্ট</span>
+            <span class="text-[11px] text-indigo-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Fitness Screening</span>
             <button onclick="openAppointmentModal('Refractive & LASIK (SMILE Pro)')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              পরামর্শ নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Consult Now <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 6: Glaucoma Pressure & Trabeculectomy / Laser -->
+        <!-- Video 6 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-emerald-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -891,27 +943,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/30">
-                  ৬. গ্লুকোমা ক্লিনিক
+                  6. Glaucoma Clinic
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>২:৫০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>2:50 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-emerald-400 transition leading-snug line-clamp-2">
-                গ্লুকোমা বা চোখের নীরব ঘাতক: প্রেশার পরীক্ষা ও লেজার আইরিডোটমি
+                Glaucoma Prevention: Pressure Testing & Laser Iridotomy
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                দৃষ্টি হারানোর ঝুঁকি এড়াতে চোখের অতিরিক্ত অভ্যন্তরীণ প্রেশার নিয়ন্ত্রণ ও ড্রেনিং ফিল্টারিং সার্জারি।
+                Controlling intraocular pressure (IOP) and filtering surgeries to prevent vision loss.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-emerald-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> আই প্রেশার মনিটরিং</span>
+            <span class="text-[11px] text-emerald-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> IOP Monitoring</span>
             <button onclick="openAppointmentModal('Glaucoma Clinic')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              সিরিয়াল নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Book Serial <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 7: Premium Trifocal & Toric IOL Replacement -->
+        <!-- Video 7 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-cyan-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -928,27 +980,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-cyan-500/20 text-cyan-300 px-2 py-0.5 rounded border border-cyan-500/30">
-                  ৭. ট্রাইফোকাল লেন্স
+                  7. Trifocal Lenses
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>৩:১০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>3:10 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-cyan-400 transition leading-snug line-clamp-2">
-                মাল্টিফোকাল ও ট্রাইফোকাল লেন্স: কাছের ও দূরের চশমা থেকে স্থায়ী মুক্তি
+                Multifocal & Trifocal IOLs: Clear Distance & Near Vision Without Glasses
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                কম্পিউটার, মোবাইল ও বই পড়ার জন্য রিডিং গ্লাস ছাড়া স্পষ্ট দৃষ্টির প্রিমিয়াম আইওএল প্রযুক্তি।
+                Premium IOL technology designed for reading, mobile use, and computer work without specs.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-cyan-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> আলকন ও জাইস লেন্স</span>
+            <span class="text-[11px] text-cyan-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Alcon & Zeiss IOLs</span>
             <button onclick="openAppointmentModal('Premium Trifocal IOL Inquiry')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              প্যাকেজ দেখুন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              View Packages <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 8: Pediatric Squint & Amblyopia Correction -->
+        <!-- Video 8 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-purple-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -965,27 +1017,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-purple-500/20 text-purple-300 px-2 py-0.5 rounded border border-purple-500/30">
-                  ৮. শিশু চক্ষু বিভাগ
+                  8. Pediatric Care
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>২:৩০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>2:30 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-purple-400 transition leading-snug line-clamp-2">
-                শিশুদের ট্যারা চোখ (Squint) ও অলস চোখ (Lazy Eye) চিকিৎসা
+                Pediatric Squint & Amblyopia (Lazy Eye) Correction
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                শিশুদের চোখের পেশী সমন্বয় সার্জারি ও ভিশন থেরাপির মাধ্যমে সুস্থ দৃষ্টি ফিরিয়ে আনা।
+                Correcting eye alignment and restoring healthy binocular vision through muscle surgery & therapy.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-purple-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> শিশু স্পেশালিস্ট টিম</span>
+            <span class="text-[11px] text-purple-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Pediatric Team</span>
             <button onclick="openAppointmentModal('Pediatric Eye Care')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              সিরিয়াল নিন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Book Serial <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 9: Dry Eye Disease & Thermal Pulsation / IPL Spa -->
+        <!-- Video 9 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-blue-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -1002,27 +1054,27 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded border border-blue-500/30">
-                  ৯. ড্রাই আই স্পা
+                  9. Dry Eye Spa
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>২:২০ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>2:20 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-blue-400 transition leading-snug line-clamp-2">
-                ড্রাই আই স্পা ও মেবোমিয়ান গ্ল্যান্ড আইপিএল লাইট থেরাপি
+                Dry Eye Spa & Meibomian Gland IPL Pulsed Light Therapy
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                স্ক্রিন টাইমের কারণে চোখে জ্বালাপোড়া, শুষ্কতা ও ক্লান্তি দূরীকরণের থেরাপিউটিক স্পা সেবা।
+                Therapeutic spa treatments to relieve burning sensations, dryness, and fatigue caused by screen time.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-blue-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> তাৎক্ষণিক আরাম</span>
+            <span class="text-[11px] text-blue-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Instant Relief</span>
             <button onclick="openAppointmentModal('Dry Eye Spa')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              অ্যাপয়েন্টমেন্ট <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Appointment <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
-        <!-- Video 10: Oculoplasty & Droopy Eyelid Ptosis Surgery -->
+        <!-- Video 10 -->
         <div class="min-w-[320px] sm:min-w-[360px] max-w-[360px] flex-shrink-0 bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-pink-400 transition-all duration-300">
           <div>
             <div class="relative aspect-video bg-black overflow-hidden">
@@ -1039,45 +1091,45 @@
             <div class="p-5">
               <div class="flex items-center gap-2 mb-2">
                 <span class="text-[10px] font-bold uppercase tracking-wider bg-pink-500/20 text-pink-300 px-2 py-0.5 rounded border border-pink-500/30">
-                  ১০. অকিউলোপ্লাস্টি
+                  10. Oculoplasty
                 </span>
-                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>৩:০৫ মিনিট</span>
+                <span class="text-[11px] text-slate-400"><i class="fa-regular fa-clock mr-1"></i>3:05 mins</span>
               </div>
               <h3 class="font-bold text-sm text-white group-hover:text-pink-400 transition leading-snug line-clamp-2">
-                চোখের পাতা ঝুলে পড়া (Ptosis) ও কসমেটিক অকিউলোপ্লাস্টি সার্জারি
+                Droopy Eyelid (Ptosis) Correction & Cosmetic Oculoplasty
               </h3>
               <p class="text-slate-400 text-xs mt-2 leading-relaxed line-clamp-2">
-                চোখের পাতার অতিরিক্ত চামড়া অপসারণ ও নান্দনিক দৃষ্টি পুনর্গঠন মাইক্রোসার্জারি।
+                Microsurgical removal of excess skin and aesthetic reconstruction of eyelids.
               </p>
             </div>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
-            <span class="text-[11px] text-pink-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> কসমেটিক ও মাইক্রোসার্জারি</span>
+            <span class="text-[11px] text-pink-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Cosmetic Microsurgery</span>
             <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              কনসালটেশন <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Consultation <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
 
       </div>
 
-      <!-- Quick Action Under Video Gallery -->
+      <!-- Quick Action -->
       <div class="mt-8 p-6 rounded-2xl bg-gradient-to-r from-slate-800 to-slate-800/60 border border-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div class="flex items-center gap-3 text-center sm:text-left">
           <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl flex-shrink-0">
             <i class="fa-solid fa-headset"></i>
           </div>
           <div>
-            <h4 class="font-bold text-sm text-white">চিকিৎসা বা অস্ত্রোপচার সম্পর্কিত কোনো প্রশ্ন আছে?</h4>
-            <p class="text-xs text-slate-400">আমাদের বিশেষজ্ঞ মেডিক্যাল কাউন্সেলরদের সাথে সরাসরি কথা বলুন বা হোয়াটসঅ্যাপে রিপোর্ট পাঠান।</p>
+            <h4 class="font-bold text-sm text-white">Have questions regarding treatment or surgery?</h4>
+            <p class="text-xs text-slate-400">Speak directly with our expert medical counselors or send reports on WhatsApp.</p>
           </div>
         </div>
         <div class="flex items-center gap-3">
           <button onclick="openAppointmentModal()" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-xs shadow transition">
-            অ্যাপয়েন্টমেন্ট নিন
+            Book Appointment
           </button>
           <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition inline-flex items-center gap-1.5">
-            <i class="fa-brands fa-whatsapp"></i> হোয়াটসঅ্যাপ
+            <i class="fa-brands fa-whatsapp"></i> WhatsApp
           </a>
         </div>
       </div>
@@ -1085,9 +1137,8 @@
     </div>
   </section>
 
-  <!-- Service Recipient Says (Patient Reviews & Testimonials) Section -->
+  <!-- Patient Testimonials Section -->
   <section id="reviews" class="py-24 bg-gradient-to-b from-slate-900 via-slate-950 to-white text-slate-800 relative overflow-hidden">
-    <!-- Decorative Glow Elements -->
     <div class="absolute top-10 left-1/2 -translate-x-1/2 w-3/4 h-64 bg-brand-500/10 blur-3xl pointer-events-none rounded-full"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -1096,16 +1147,15 @@
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-bold uppercase tracking-widest text-teal-400 bg-teal-950/80 border border-teal-500/30 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2">
           <i class="fa-solid fa-star text-amber-400 text-xs"></i>
-          Service Recipient Says (সেবাগ্রহীতাদের অভিজ্ঞতা)
+          Patient Testimonials & Experience
         </span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 tracking-tight">
-          আমাদের রোগীদের সুস্থ দৃষ্টি ও আস্থার গল্প
+          Stories of Restored Vision & Trust
         </h2>
         <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">
-          চোখের আলো হসপিটালে চিকিৎসা ও সার্জারি গ্রহণকারী সম্মানিত রোগীদের সরাসরি অভিজ্ঞতা ও মতামত।
+          Direct feedback and experiences shared by patients treated at Chokher Alo Hospital.
         </p>
         
-        <!-- Overall Rating Badge -->
         <div class="mt-5 inline-flex items-center gap-3 bg-slate-800/90 border border-slate-700/80 rounded-2xl px-5 py-2.5 shadow-lg backdrop-blur-md">
           <div class="flex text-amber-400 text-sm">
             <i class="fa-solid fa-star"></i>
@@ -1114,15 +1164,15 @@
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star-half-stroke"></i>
           </div>
-          <span class="text-white font-extrabold text-sm">৪.৯ / ৫.০</span>
-          <span class="text-slate-400 text-xs border-l border-slate-600 pl-3">৪,৫০০+ সফল চিকিৎসার রোগী সন্তুষ্টি</span>
+          <span class="text-white font-extrabold text-sm">4.9 / 5.0</span>
+          <span class="text-slate-400 text-xs border-l border-slate-600 pl-3">4,500+ Satisfied Patients</span>
         </div>
       </div>
 
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Review 1: SMILE Pro Laser -->
+        <!-- Review 1 -->
         <div class="bg-white rounded-3xl p-7 shadow-card border border-slate-200/80 hover:shadow-2xl transition duration-300 flex flex-col justify-between group hover:-translate-y-1">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -1134,30 +1184,30 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <span class="text-[11px] font-semibold bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>ভেরিফাইড রোগী
+                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>Verified Patient
               </span>
             </div>
 
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
-              "দীর্ঘ ১২ বছর ধরে ভারী চশমা ব্যবহার করতাম (-৫.৫০ পাওয়ার ছিল)। চোখের আলো হসপিটালে ডা. তারিকুল স্যারের তত্ত্বাবধানে কার্ল জাইস SMILE Pro লেজার করাই। মাত্র ১০ সেকেন্ডের পদ্ধতিতে কোনো ব্যথা ছাড়াই চশমা মুক্ত হতে পেরেছি। অস্ত্রোপচারের পরদিনই অফিসে ল্যাপটপে কাজ করতে পেরেছি।"
+              "I used heavy glasses for 12 years (-5.50 power). Under Dr. Tariqul's guidance at Chokher Alo, I got Carl Zeiss SMILE Pro laser done. The 10-second procedure freed me from glasses with zero pain. I was back working on my laptop the very next day."
             </p>
           </div>
 
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-600 to-tealAccent-500 text-white font-bold flex items-center justify-center text-sm shadow">
-                মা
+                MH
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">মাহমুদুল হাসান</h4>
-                <p class="text-[11px] text-slate-500">সফটওয়্যার প্রকৌশলী • ধানমন্ডি শাখা</p>
+                <h4 class="font-bold text-slate-900 text-sm">Mahmudul Hasan</h4>
+                <p class="text-[11px] text-slate-500">Software Engineer • Dhanmmonitoring Branch</p>
               </div>
             </div>
             <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">SMILE Pro</span>
           </div>
         </div>
 
-        <!-- Review 2: Phaco Cataract -->
+        <!-- Review 2 -->
         <div class="bg-white rounded-3xl p-7 shadow-card border border-slate-200/80 hover:shadow-2xl transition duration-300 flex flex-col justify-between group hover:-translate-y-1">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -1169,30 +1219,30 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <span class="text-[11px] font-semibold bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>ভেরিফাইড রোগী
+                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>Verified Patient
               </span>
             </div>
 
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
-              "আমার বাবার দুই চোখের ছানি অপারেশনের জন্য চোখের আলো হসপিটালের আলকন সেন্টুরিয়ন ফ্যাকো পদ্ধতি বেছে নিই। কোনো সেলাই বা ইনজেকশন ছাড়া মাত্র ১৫ মিনিটে অপারেশন সম্পন্ন হয়। প্রিমিয়াম ট্রাইফোকাল লেন্স বসানোর পর বাবা এখন রিডিং চশমা ছাড়াই কুরআন পড়তে পারেন।"
+              "We chose the Alcon Centurion Phaco method for my father's cataract surgery. It was completed in 15 minutes without stitches or injections. After implanting premium trifocal lenses, my father can read without reading glasses."
             </p>
           </div>
 
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-teal-600 to-emerald-500 text-white font-bold flex items-center justify-center text-sm shadow">
-                না
+                NA
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">নাজনীন আক্তার</h4>
-                <p class="text-[11px] text-slate-500">শিক্ষিকা • উত্তরা শাখা</p>
+                <h4 class="font-bold text-slate-900 text-sm">Nazneen Akter</h4>
+                <p class="text-[11px] text-slate-500">Teacher • Uttara Branch</p>
               </div>
             </div>
-            <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">ফ্যাকো ছানি অপারেশন</span>
+            <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">Phaco Cataract</span>
           </div>
         </div>
 
-        <!-- Review 3: Retina Care -->
+        <!-- Review 3 -->
         <div class="bg-white rounded-3xl p-7 shadow-card border border-slate-200/80 hover:shadow-2xl transition duration-300 flex flex-col justify-between group hover:-translate-y-1">
           <div>
             <div class="flex items-center justify-between mb-4">
@@ -1204,37 +1254,37 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <span class="text-[11px] font-semibold bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>ভেরিফাইড রোগী
+                <i class="fa-solid fa-circle-check text-[10px] mr-1"></i>Verified Patient
               </span>
             </div>
 
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
-              "ডায়াবেটিসের কারণে আমার রেটিনায় রক্তক্ষরণ হয়ে হঠাৎ দৃষ্টি ঝাপসা হয়ে এসেছিল। ডা. ফারজানা ম্যাডামের সময়োপযোগী ওসিটি টেস্ট ও গ্রিন রেটিনা লেজার চিকিৎসায় আমার দৃষ্টি সম্পূর্ণ স্বাভাবিক অবস্থায় ফিরে এসেছে। ডাক্তার ও নার্সদের সেবা অত্যন্ত আন্তরিক।"
+              "Diabetes caused retinal bleeding and sudden blurred vision. Dr. Farzana's timely OCT scan and green retina laser treatment fully restored my vision. The doctors and nursing staff were exceptionally caring."
             </p>
           </div>
 
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
             <div class="flex items-center space-x-3">
               <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-indigo-600 to-purple-500 text-white font-bold flex items-center justify-center text-sm shadow">
-                আ
+                AK
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">আনোয়ারুল করিম</h4>
-                <p class="text-[11px] text-slate-500">ব্যবসায়ী • চট্টগ্রাম শাখা</p>
+                <h4 class="font-bold text-slate-900 text-sm">Anwarul Karim</h4>
+                <p class="text-[11px] text-slate-500">Businessman • Chattogram Branch</p>
               </div>
             </div>
-            <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">রেটিনা লেজার</span>
+            <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">Retina Laser</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Live Review Submission Action -->
+      <!-- Action -->
       <div class="mt-12 text-center">
         <div class="inline-flex flex-wrap items-center justify-center gap-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-slate-200 shadow-sm text-xs text-slate-700">
-          <span class="font-semibold"><i class="fa-solid fa-heart text-rose-500 mr-1.5"></i>আপনি কি সম্প্রতি সেবা নিয়েছেন?</span>
-          <button onclick="openAppointmentModal('রোগীর মতামত / ফলোআপ')" class="px-4 py-2 bg-slate-900 hover:bg-brand-600 text-white font-bold rounded-xl transition">
-            আপনার অভিজ্ঞতা জানান
+          <span class="font-semibold"><i class="fa-solid fa-heart text-rose-500 mr-1.5"></i>Did you recently receive treatment from us?</span>
+          <button onclick="openAppointmentModal('Patient Feedback / Follow-up')" class="px-4 py-2 bg-slate-900 hover:bg-brand-600 text-white font-bold rounded-xl transition">
+            Share Your Feedback
           </button>
         </div>
       </div>
@@ -1242,17 +1292,17 @@
     </div>
   </section>
 
-  <!-- Hospital Locations & Contact Details in Bangladesh -->
+  <!-- Hospital Locations & Contact Details Section -->
   <section id="contact" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         
         <!-- Hospital Details Card -->
         <div class="lg:col-span-6 space-y-6">
-          <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">আমাদের অবস্থান ও শাখাসমূহ</span>
-          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">চোখের আলো হসপিটালে স্বাগতম</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Our Locations & Branches</span>
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Welcome to Chokher Alo Hospital</h2>
           <p class="text-slate-600 text-sm leading-relaxed">
-            চোখের আলো রেটিনা গ্লুকোমা হসপিটাল অ্যান্ড ফ্যাকো সেন্টারের প্রতিটি শাখায় অভিজ্ঞ কনসালটেন্ট, ডেডিকেটেড রেটিনা-গ্লুকোমা ইউনিট ও আধুনিক অপারেশন থিয়েটার সুবিধা রয়েছে।
+            Every branch of Chokher Alo Retina Glaucoma Hospital & Phaco Center features experienced consultants, dedicated Retina-Glaucoma units, and state-of-the-art modular operation theaters.
           </p>
 
           <div class="space-y-4 pt-2">
@@ -1261,29 +1311,9 @@
                 <i class="fa-solid fa-hospital"></i>
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">ধানমন্ডি প্রধান শাখা (Dhanmondi Main Campus)</h4>
-                <p class="text-slate-500 text-xs mt-0.5">বাড়ি ৭২, রোড ২৭ (পুরাতন ১৬), ধানমন্ডি, ঢাকা-১২০৯</p>
-                <p class="text-brand-600 text-xs font-semibold">হেল্পলাইন: 09666-710610, 01711-000000</p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-map-pin"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">উত্তরা শাখা (Uttara Branch)</h4>
-                <p class="text-slate-500 text-xs mt-0.5">প্লট ১৮, সেক্টর ৭, রবীন্দ্র সরণি, উত্তরা, ঢাকা-১২৩০</p>
-              </div>
-            </div>
-
-            <div class="flex items-start space-x-4">
-              <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center flex-shrink-0">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div>
-                <h4 class="font-bold text-slate-900 text-sm">চট্টগ্রাম শাখা (Chattogram Center)</h4>
-                <p class="text-slate-500 text-xs mt-0.5">নাসিরাবাদ সি/এ, জিইসি মোড় সংলগ্ন, চট্টগ্রাম</p>
+                <h4 class="font-bold text-slate-900 text-sm">Main Branch</h4>
+                <p class="text-slate-500 text-xs mt-0.5">Selim Shopping Center (2nd Floor), Bangla School Mor, Sadar Road, Bhola</p>
+                <p class="text-brand-600 text-xs font-semibold">Helpline: +8801981-369393</p>
               </div>
             </div>
 
@@ -1292,84 +1322,84 @@
                 <i class="fa-regular fa-clock"></i>
               </div>
               <div>
-                <h4 class="font-bold text-slate-900 text-sm">রোগী দেখার সময়সূচী (OPD Timing)</h4>
-                <p class="text-slate-500 text-xs mt-0.5">শনিবার – বৃহস্পতিবার: সকাল ৮:০০ – রাত ৯:০০ | শুক্রবার: বিকাল ৩:০০ – রাত ৮:০০</p>
-                <p class="text-rose-600 text-xs font-bold mt-0.5">জরুরী বিভাগ (Trauma): ২৪ ঘণ্টা খোলা থাকে</p>
+                <h4 class="font-bold text-slate-900 text-sm">Consultation Hours</h4>
+                <p class="text-slate-500 text-xs mt-0.5">Saturday – Thursday: 8:00 AM – 9:00 PM | Friday: 3:00 PM – 8:00 PM</p>
+                <p class="text-rose-600 text-xs font-bold mt-0.5">Emergency Trauma Dept: Open 24/7</p>
               </div>
             </div>
           </div>
 
           <div class="pt-2 flex flex-wrap gap-3">
             <button onclick="openAppointmentModal()" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs rounded-xl shadow transition">
-              অনলাইনে সিরিয়াল নিন
+              Book Online Serial
             </button>
             <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="px-5 py-3 bg-emerald-600 hover:bg-emerald-700 font-semibold text-xs text-white rounded-xl transition inline-flex items-center">
-              <i class="fa-brands fa-whatsapp mr-1.5 text-sm"></i> হোয়াটসঅ্যাপ চ্যাট
+              <i class="fa-brands fa-whatsapp mr-1.5 text-sm"></i> WhatsApp Chat
             </a>
           </div>
         </div>
 
-        <!-- Contact Form (Replaces Map Container) -->
+        <!-- Contact Form -->
         <div class="lg:col-span-6 bg-white rounded-3xl p-7 sm:p-8 border border-slate-200 shadow-xl relative">
           <div class="flex items-center space-x-3 mb-5">
             <div class="w-11 h-11 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-lg shadow-sm">
               <i class="fa-solid fa-paper-plane"></i>
             </div>
             <div>
-              <h3 class="font-extrabold text-lg sm:text-xl text-slate-900">সরাসরি বার্তা পাঠান (Contact Form)</h3>
-              <p class="text-xs text-slate-500">আপনার কোনো প্রশ্ন, অনুসন্ধান বা পরামর্শ থাকলে আমাদের জানান</p>
+              <h3 class="font-extrabold text-lg sm:text-xl text-slate-900">Send Direct Message</h3>
+              <p class="text-xs text-slate-500">Send us your queries, feedback, or consultation requests</p>
             </div>
           </div>
 
           <form id="contactUsForm" onsubmit="handleContactFormSubmit(event)" class="space-y-4 text-xs sm:text-sm">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">আপনার নাম (Full Name) *</label>
-                <input type="text" id="contactName" required placeholder="যেমন: তানভীর রহমান" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
+                <label class="block font-semibold text-slate-700 mb-1">Full Name *</label>
+                <input type="text" id="contactName" required placeholder="e.g. Tanvir Rahman" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
               </div>
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">মোবাইল নম্বর (Phone) *</label>
+                <label class="block font-semibold text-slate-700 mb-1">Phone Number *</label>
                 <input type="tel" id="contactPhone" required placeholder="01XXXXXXXXX" pattern="^(?:\+?88)?01[3-9]\d{8}$" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition">
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">শাখা নির্বাচন করুন (Branch) *</label>
+                <label class="block font-semibold text-slate-700 mb-1">Select Branch *</label>
                 <select id="contactBranch" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition font-sans">
-                  <option value="ধানমন্ডি প্রধান ক্যাম্পাস">ধানমন্ডি প্রধান ক্যাম্পাস (ঢাকা)</option>
-                  <option value="উত্তরা শাখা">উত্তরা শাখা (ঢাকা)</option>
-                  <option value="বনানী শাখা">বনানী শাখা (ঢাকা)</option>
-                  <option value="চট্টগ্রাম সেন্টার">চট্টগ্রাম শাখা (জিইসি মোড়)</option>
+                  <option value="Dhanmondi Main Campus">Dhanmondi Main Campus (Dhaka)</option>
+                  <option value="Uttara Branch">Uttara Branch (Dhaka)</option>
+                  <option value="Banani Branch">Banani Branch (Dhaka)</option>
+                  <option value="Chattogram Center">Chattogram Branch (GEC Circle)</option>
                 </select>
               </div>
               <div>
-                <label class="block font-semibold text-slate-700 mb-1">বিষয় বা সেবা (Subject) *</label>
+                <label class="block font-semibold text-slate-700 mb-1">Subject / Specialty *</label>
                 <select id="contactSubject" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition font-sans">
-                  <option value="সাধারণ পরামর্শ ও জিজ্ঞাসা">সাধারণ পরামর্শ ও জিজ্ঞাসা</option>
-                  <option value="ফ্যাকো ছানি অপারেশন প্যাকেজ">ফ্যাকো ছানি অপারেশন প্যাকেজ</option>
-                  <option value="SMILE Pro ও ল্যাসিক চশমামুক্তি">SMILE Pro ও ল্যাসিক চশমামুক্তি</option>
-                  <option value="রেটিনা ও ডায়াবেটিক চক্ষু পরীক্ষা">রেটিনা ও ডায়াবেটিক চক্ষু পরীক্ষা</option>
-                  <option value="গ্লুকোমা ও চোখের প্রেশার">গ্লুকোমা ও চোখের প্রেশার</option>
-                  <option value="ইন্স্যুরেন্স ও ক্যাশলেস সুবিধা">ইন্স্যুরেন্স ও ক্যাশলেস সুবিধা</option>
+                  <option value="General Consultation & Inquiry">General Consultation & Inquiry</option>
+                  <option value="Phaco Cataract Surgery Package">Phaco Cataract Surgery Package</option>
+                  <option value="SMILE Pro & LASIK Glass Removal">SMILE Pro & LASIK Glass Removal</option>
+                  <option value="Retina & Diabetic Eye Exam">Retina & Diabetic Eye Exam</option>
+                  <option value="Glaucoma & Eye Pressure">Glaucoma & Eye Pressure</option>
+                  <option value="Insurance & Cashless Facility">Insurance & Cashless Facility</option>
                 </select>
               </div>
             </div>
 
             <div>
-              <label class="block font-semibold text-slate-700 mb-1">আপনার বার্তা বা প্রশ্ন (Your Message) *</label>
-              <textarea id="contactMessage" rows="3" required placeholder="আপনার চোখের সমস্যা বা জিজ্ঞাসা বিস্তারিত লিখুন..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none transition"></textarea>
+              <label class="block font-semibold text-slate-700 mb-1">Your Message or Inquiry *</label>
+              <textarea id="contactMessage" rows="3" required placeholder="Describe your eye condition or question in detail..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none transition"></textarea>
             </div>
 
             <div class="pt-1">
               <button type="submit" class="w-full py-3.5 rounded-xl bg-slate-900 hover:bg-brand-600 font-bold text-white shadow-md transition flex items-center justify-center gap-2 text-xs sm:text-sm">
                 <i class="fa-solid fa-paper-plane"></i>
-                <span>বার্তা প্রেরণ করুন (Send Message)</span>
+                <span>Send Message</span>
               </button>
             </div>
 
             <p class="text-[11px] text-center text-slate-500">
-              <i class="fa-solid fa-headset mr-1 text-brand-600"></i> আমাদের মেডিক্যাল টিম সর্বোচ্চ ৩০ মিনিটের মধ্যে আপনার সাথে যোগাযোগ করবে।
+              <i class="fa-solid fa-headset mr-1 text-brand-600"></i> Our medical team will respond within 30 minutes.
             </p>
           </form>
         </div>
@@ -1378,7 +1408,7 @@
     </div>
   </section>
 
-  <!-- Localized Footer -->
+  <!-- Footer -->
   <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
@@ -1402,7 +1432,7 @@
             </div>
           </div>
           <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
-            চোখের আলো রেটিনা গ্লুকোমা হসপিটাল অ্যান্ড ফ্যাকো সেন্টার বাংলাদেশের অন্ধত্ব দূরীকরণ ও রেটিনা, গ্লুকোমা ও আধুনিক ফ্যাকো ছানি চিকিৎসায় আন্তর্জাতিক মানের নির্ভরযোগ্য প্রতিষ্ঠান।
+            Chokher Alo Retina Glaucoma Hospital & Phaco Center is a premier center for blindness prevention, retina, glaucoma, and modern Phaco cataract treatments in Bangladesh.
           </p>
           <div class="flex space-x-3 pt-2">
             <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
@@ -1413,37 +1443,36 @@
 
         <!-- Col 2: Services -->
         <div class="space-y-3">
-          <h4 class="font-bold text-white text-sm uppercase tracking-wider">চিকিৎসাসমূহ</h4>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">More Links</h4>
           <ul class="space-y-2">
-            <li><a href="#lasik-cataract" class="hover:text-white transition">ব্লেডলেস SMILE ও LASIK</a></li>
-            <li><a href="#services" class="hover:text-white transition">সেলাইবিহীন ফ্যাকো ছানি অপারেশন</a></li>
-            <li><a href="#services" class="hover:text-white transition">ডায়াবেটিক রেটিনোপ্যাথি লেজার</a></li>
-            <li><a href="#services" class="hover:text-white transition">গ্লুকোমা ও চোখের প্রেশার নিয়ন্ত্রণ</a></li>
-            <li><a href="#services" class="hover:text-white transition">শিশুদের ট্যারা চোখ সার্জারি</a></li>
-            <li><a href="#services" class="hover:text-white transition">ড্রাই আই স্পা ও কর্নিয়া প্রতিস্থাপন</a></li>
+            <li><a href="#lasik-cataract" class="hover:text-white transition">Our Departments</a></li>
+            <li><a href="#services" class="hover:text-white transition">Career And Circular</a></li>
+            <li><a href="#services" class="hover:text-white transition">Hospital Gallery</a></li>
+            <li><a href="#services" class="hover:text-white transition">News & Media</a></li>
+            <li><a href="#services" class="hover:text-white transition">Donate Us</a></li>
           </ul>
         </div>
 
         <!-- Col 3: Quick Links -->
         <div class="space-y-3">
-          <h4 class="font-bold text-white text-sm uppercase tracking-wider">রোগীদের সহায়তা</h4>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Patient Care</h4>
           <ul class="space-y-2">
-            <li><a href="#vision-checker" class="hover:text-white transition">অনলাইন ভিশন স্ক্রিনিং</a></li>
-            <li><a href="#" onclick="openInsuranceModal()" class="hover:text-white transition">ক্যাশলেস স্বাস্থ্যবীমা (TPA)</a></li>
-            <li><a href="#pricing" class="hover:text-white transition">প্যাকেজ ও টেস্টের খরচ</a></li>
-            <li><a href="#specialists" class="hover:text-white transition">বিশেষজ্ঞ ডাক্তারের তালিকা</a></li>
-            <li><a href="#" onclick="openAppointmentModal()" class="hover:text-white transition">অনলাইন সিরিয়াল বুকিং</a></li>
+            <li><a href="#vision-checker" class="hover:text-white transition">Online Vision Check</a></li>
+            <li><a href="#" onclick="openInsuranceModal()" class="hover:text-white transition">Cashless Insurance (TPA)</a></li>
+            <li><a href="#pricing" class="hover:text-white transition">Packages & Fees</a></li>
+            <li><a href="#specialists" class="hover:text-white transition">Specialist Doctor Panel</a></li>
+            <li><a href="#" onclick="openAppointmentModal()" class="hover:text-white transition">Online Appointment Booking</a></li>
           </ul>
         </div>
 
         <!-- Col 4: Emergency Notice -->
         <div class="space-y-3">
-          <h4 class="font-bold text-white text-sm uppercase tracking-wider">জরুরী হটলাইন</h4>
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Emergency Hotline</h4>
           <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
-            <p class="text-[11px] text-rose-400 font-bold mb-1"><i class="fa-solid fa-bell mr-1"></i> ট্রমা ও ইমার্জেন্সি ডেস্ক</p>
+            <p class="text-[11px] text-rose-400 font-bold mb-1"><i class="fa-solid fa-bell mr-1"></i> Trauma & Emergency Desk</p>
             <p class="text-white font-mono text-sm font-bold">09666-710610</p>
-            <p class="text-slate-300 text-xs mt-1">মোবাইল: 01711-000000</p>
-            <p class="text-[10px] text-slate-500 mt-1">২৪ ঘণ্টা সার্বক্ষণিক জরুরি টিম প্রস্তুত।</p>
+            <p class="text-slate-300 text-xs mt-1">Mobile: 01981-369393</p>
+            <p class="text-[10px] text-slate-500 mt-1">24/7 Emergency trauma care team ready.</p>
           </div>
         </div>
 
@@ -1455,12 +1484,11 @@
       </div>
     </div>
   </footer>
-<!-- ... existing code ... -->
-  <!-- Appointment Booking Modal (Bangladeshi context) -->
+
+  <!-- Appointment Booking Modal -->
   <div id="appointmentModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
     <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative my-8">
       
-      <!-- Close button -->
       <button onclick="closeAppointmentModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-2 rounded-full hover:bg-slate-100 transition focus:outline-none" aria-label="Close modal">
         <i class="fa-solid fa-xmark text-lg"></i>
       </button>
@@ -1470,84 +1498,83 @@
           <i class="fa-regular fa-calendar-check"></i>
         </div>
         <div>
-          <h3 class="font-extrabold text-xl text-slate-900">ডাক্তারের সিরিয়াল বুকিং</h3>
-          <p class="text-xs text-slate-500">অনলাইনে বুকিং করার পর আমাদের প্রতিনিধি আপনাকে কল করে সিরিয়াল নম্বর কনফার্ম করবেন</p>
+          <h3 class="font-extrabold text-xl text-slate-900">Book Doctor Appointment</h3>
+          <p class="text-xs text-slate-500">Our representative will call to confirm your serial number after submission</p>
         </div>
       </div>
 
-      <!-- Booking Form -->
       <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)" class="space-y-4 text-xs sm:text-sm">
         
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">শাখা নির্বাচন করুন (Branch) *</label>
+            <label class="block font-semibold text-slate-700 mb-1">Select Branch *</label>
             <select id="modalBranchSelect" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
-              <option value="Dhanmondi Main Branch">ধানমন্ডি প্রধান শাখা (ঢাকা)</option>
-              <option value="Uttara Sector 7 Branch">উত্তরা শাখা (ঢাকা)</option>
-              <option value="Banani Branch">বনানী শাখা (ঢাকা)</option>
-              <option value="Chattogram GEC Branch">চট্টগ্রাম শাখা (জিইসি মোড়)</option>
+              <option value="Dhanmondi Main Branch">Dhanmondi Main Branch (Dhaka)</option>
+              <option value="Uttara Sector 7 Branch">Uttara Branch (Dhaka)</option>
+              <option value="Banani Branch">Banani Branch (Dhaka)</option>
+              <option value="Chattogram GEC Branch">Chattogram Branch (GEC Circle)</option>
             </select>
           </div>
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">বিভাগ বা সেবা (Department) *</label>
+            <label class="block font-semibold text-slate-700 mb-1">Department / Specialty *</label>
             <select id="modalDeptSelect" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
-              <option value="General Comprehensive Eye Exam">সাধারণ চোখ পরীক্ষা (General Checkup)</option>
-              <option value="Refractive & LASIK (SMILE Pro)">চশমা মুক্তি (SMILE Pro / LASIK)</option>
-              <option value="Cataract & Phaco Surgery">ফ্যাকো ছানি অপারেশন (Cataract)</option>
-              <option value="Retina & Diabetic Eye">রেটিনা ও ডায়াবেটিক চোখ (Retina)</option>
-              <option value="Glaucoma Clinic">গ্লুকোমা ও আই প্রেশার (Glaucoma)</option>
-              <option value="Pediatric Eye Care">শিশু চক্ষু ও ট্যারা চোখ (Pediatric)</option>
-              <option value="Dry Eye Spa">ড্রাই আই স্পা ও কর্নিয়া (Dry Eye)</option>
+              <option value="General Comprehensive Eye Exam">General Comprehensive Eye Exam</option>
+              <option value="Refractive & LASIK (SMILE Pro)">Refractive & LASIK (SMILE Pro)</option>
+              <option value="Cataract & Phaco Surgery">Cataract & Phaco Surgery</option>
+              <option value="Retina & Diabetic Eye">Retina & Diabetic Eye</option>
+              <option value="Glaucoma Clinic">Glaucoma Clinic</option>
+              <option value="Pediatric Eye Care">Pediatric Eye Care & Squint</option>
+              <option value="Dry Eye Spa">Dry Eye Spa & Cornea</option>
             </select>
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">তারিখ (Preferred Date) *</label>
+            <label class="block font-semibold text-slate-700 mb-1">Preferred Date *</label>
             <input type="date" id="appointmentDate" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
           </div>
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">পছন্দের শিফট *</label>
+            <label class="block font-semibold text-slate-700 mb-1">Preferred Shift *</label>
             <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
-              <option value="সকাল (০৯:০০ AM - ০১:০০ PM)">সকাল (০৯:০০ AM - ০১:০০ PM)</option>
-              <option value="বিকাল (০২:০০ PM - ০৫:০০ PM)">বিকাল (০২:০০ PM - ০৫:০০ PM)</option>
-              <option value="সন্ধ্যা (০৫:৩০ PM - ০৯:০০ PM)">সন্ধ্যা (০৫:৩০ PM - ০৯:০০ PM)</option>
+              <option value="Morning (09:00 AM - 01:00 PM)">Morning (09:00 AM - 01:00 PM)</option>
+              <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (02:00 PM - 05:00 PM)</option>
+              <option value="Evening (05:30 PM - 09:00 PM)">Evening (05:30 PM - 09:00 PM)</option>
             </select>
           </div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">রোগীর পূর্ণ নাম (Patient Name) *</label>
-            <input type="text" id="patientName" placeholder="যেমন: মো. আরিফুল ইসলাম" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <label class="block font-semibold text-slate-700 mb-1">Patient Full Name *</label>
+            <input type="text" id="patientName" placeholder="e.g. Md. Ariful Islam" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
           </div>
           <div>
-            <label class="block font-semibold text-slate-700 mb-1">মোবাইল নম্বর (Phone Number) *</label>
+            <label class="block font-semibold text-slate-700 mb-1">Phone Number *</label>
             <input type="tel" id="patientPhone" placeholder="017XXXXXXXX" pattern="^(?:\+?88)?01[3-9]\d{8}$" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
           </div>
         </div>
 
         <div>
-          <label class="block font-semibold text-slate-700 mb-1">সমস্যা বা বিশেষ লক্ষণ (ঐচ্ছিক)</label>
-          <textarea rows="2" placeholder="চোখে ঝাপসা দেখা, লাল হওয়া, পানি পড়া, মাথা ব্যথা বা ল্যাসিক পরামর্শ..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none"></textarea>
+          <label class="block font-semibold text-slate-700 mb-1">Symptoms or Special Notes (Optional)</label>
+          <textarea rows="2" placeholder="Blurred vision, redness, watery eyes, headache, LASIK consultation..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none"></textarea>
         </div>
 
         <div class="pt-2">
           <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-700 hover:to-tealAccent-500 font-bold text-white shadow-lg transition flex items-center justify-center gap-2 text-sm">
             <i class="fa-solid fa-calendar-check"></i>
-            <span>সিরিয়াল নিশ্চিত করুন (Confirm Serial)</span>
+            <span>Confirm Appointment Serial</span>
           </button>
         </div>
 
         <p class="text-[11px] text-center text-slate-400">
-          <i class="fa-solid fa-shield-halved text-[10px] mr-1"></i> আপনার তথ্য সম্পূর্ণ গোপনীয় ও সুরক্ষিত থাকবে।
+          <i class="fa-solid fa-shield-halved text-[10px] mr-1"></i> Your personal data is encrypted and strictly confidential.
         </p>
       </form>
     </div>
   </div>
 
-  <!-- Localized Insurance & Payment Partners Modal -->
+  <!-- Cashless Insurance Modal -->
   <div id="insuranceModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
       <button onclick="closeInsuranceModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-2 rounded-full hover:bg-slate-100 transition focus:outline-none">
@@ -1557,38 +1584,52 @@
       <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-4">
         <i class="fa-solid fa-hand-holding-dollar"></i>
       </div>
-      <h3 class="font-extrabold text-xl text-slate-900">ক্যাশলেস স্বাস্থ্যবীমা ও পেমেন্ট পার্টনার</h3>
+      <h3 class="font-extrabold text-xl text-slate-900">Cashless Health Insurance & Payment Partners</h3>
       <p class="text-xs text-slate-500 mt-1 mb-5">
-        চোখের আলো রেটিনা গ্লুকোমা হসপিটাল অ্যান্ড ফ্যাকো সেন্টারে দেশের প্রধান বীমা কোম্পানি ও কর্পোরেট কার্ডধারীদের জন্য ক্যাশলেস ছানি ও রেটিনা সার্জারি সুবিধা রয়েছে।
+        Chokher Alo Retina Glaucoma Hospital & Phaco Center provides cashless cataract and retina surgery benefits for corporate cardholders and top insurance plans.
       </p>
 
       <div class="space-y-3 text-xs text-slate-700 bg-slate-50 p-4 rounded-2xl border border-slate-200">
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> মেটলাইফ বাংলাদেশ (MetLife Bangladesh)</div>
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> গ্রিন ডেল্টা ইন্স্যুরেন্স (Green Delta Insurance)</div>
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> গার্ডিয়ান লাইফ ইন্স্যুরেন্স (Guardian Life)</div>
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> প্রগতি লাইফ ও ডেল্টা লাইফ ইনস্যুরেন্স</div>
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> বিকাশ (bKash) ও নগদ (Nagad) ডিজিটাল পেমেন্ট</div>
-        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> শীর্ষ ব্যাংকের ক্রেডিট কার্ডে ০% ইএমআই (৩ থেকে ১২ মাস)</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> MetLife Bangladesh</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Green Delta Insurance</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Guardian Life Insurance</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> Pragati Life & Delta Life Insurance</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> bKash & Nagad Digital Payments</div>
+        <div class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-500 mr-2"></i> 0% EMI (3 to 12 months) on leading bank credit cards</div>
       </div>
 
       <div class="mt-6 flex gap-3">
-        <button onclick="closeInsuranceModal(); openAppointmentModal('ইন্স্যুরেন্স সুবিধা');" class="w-full py-3 rounded-xl bg-brand-600 text-white font-bold text-xs hover:bg-brand-700 transition">
-          ইন্স্যুরেন্স ডেস্কে যোগাযোগ করুন
+        <button onclick="closeInsuranceModal(); openAppointmentModal('Insurance Facility');" class="w-full py-3 rounded-xl bg-brand-600 text-white font-bold text-xs hover:bg-brand-700 transition">
+          Contact Insurance Desk
         </button>
       </div>
     </div>
   </div>
 
-  <!-- Floating WhatsApp Action Button for Quick Bangladeshi Patient Serial -->
+  <!-- Toast Notification System -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden transform transition-all duration-300 translate-y-4 max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex items-start gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="flex-1">
+      <h4 class="font-bold text-xs sm:text-sm text-white" id="toastTitle">Notification</h4>
+      <p class="text-xs text-slate-300 mt-0.5 leading-snug" id="toastMessage">Action completed successfully.</p>
+    </div>
+    <button onclick="hideToast()" class="text-slate-400 hover:text-white text-xs p-1">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
   <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Hospital,%20I%20need%20doctor%20appointment%20information" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3.5 shadow-2xl flex items-center gap-2 group transition-all duration-300 transform hover:scale-105" title="WhatsApp Serial">
     <i class="fa-brands fa-whatsapp text-2xl"></i>
-    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold font-bengali">
-      হোয়াটসঅ্যাপে সিরিয়াল
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold">
+      WhatsApp Serial
     </span>
   </a>
-<!-- ... existing code ... -->
+
+  <!-- JavaScript -->
   <script>
-    // State management for Interactive Acuity Test
     let acuityStep = 0;
     const acuityLevels = [
       { size: 'text-6xl', level: '20/40', dir: 'right', rot: '0deg' },
@@ -1597,7 +1638,6 @@
       { size: 'text-lg', level: '20/15', dir: 'down', rot: '90deg' }
     ];
 
-    // Video Carousel Auto-Scroll Logic
     let isVideoScrollingPaused = false;
     let autoScrollInterval = null;
     let resumeTimeout = null;
@@ -1614,7 +1654,6 @@
       autoScrollInterval = setInterval(() => {
         if (!isVideoScrollingPaused && container) {
           container.scrollLeft += stepPixels;
-          // Smooth loop back to beginning when reached end
           if (container.scrollLeft >= container.scrollWidth - container.clientWidth - 2) {
             container.scrollLeft = 0;
           }
@@ -1653,10 +1692,10 @@
 
       if (isVideoScrollingPaused) {
         dot.className = 'w-2 h-2 rounded-full bg-amber-400';
-        text.textContent = 'স্ক্রোল বিরতি আছে (প্লে করুন)';
+        text.textContent = 'Scroll Paused (Click to Play)';
       } else {
         dot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse';
-        text.textContent = 'অটো-স্ক্রোল চলছে';
+        text.textContent = 'Auto-scroll Active';
       }
     }
 
@@ -1673,7 +1712,6 @@
       resumeVideoAutoScrollDelayed();
     }
 
-    // Initialize default min appointment date and auto-scroll on DOMContentLoaded
     document.addEventListener('DOMContentLoaded', () => {
       const dateInput = document.getElementById('appointmentDate');
       if (dateInput) {
@@ -1681,11 +1719,9 @@
         dateInput.min = today;
         dateInput.value = today;
       }
-      updateTumblingE();
       initVideoAutoScroll();
     });
 
-    // Mobile Menu Toggle
     function toggleMobileMenu() {
       const menu = document.getElementById('mobileMenu');
       const icon = document.getElementById('menuIcon');
@@ -1697,69 +1733,6 @@
       }
     }
 
-    // Interactive Vision Screening Tab Switcher
-    function switchTest(testNumber) {
-      for (let i = 1; i <= 3; i++) {
-        document.getElementById(`testContainer${i}`).classList.add('hidden');
-        const tab = document.getElementById(`tabTest${i}`);
-        tab.className = 'text-slate-400 hover:text-white pb-2 px-2 transition flex items-center gap-2';
-      }
-      document.getElementById(`testContainer${testNumber}`).classList.remove('hidden');
-      const activeTab = document.getElementById(`tabTest${testNumber}`);
-      activeTab.className = 'text-brand-400 border-b-2 border-brand-400 pb-2 px-2 transition flex items-center gap-2';
-    }
-
-    // Update Tumbling E display
-    function updateTumblingE() {
-      const eElem = document.getElementById('tumblingE');
-      const lvlElem = document.getElementById('acuityLevelText');
-      if (eElem && lvlElem && acuityLevels[acuityStep]) {
-        const current = acuityLevels[acuityStep];
-        eElem.className = `${current.size} font-black transition-all duration-300 select-none`;
-        eElem.style.transform = `rotate(${current.rot})`;
-        lvlElem.textContent = `Acuity Level ${current.level}`;
-      }
-    }
-
-    // Check Acuity Answer
-    function checkAcuityAnswer(direction) {
-      const feedback = document.getElementById('acuityFeedback');
-      const current = acuityLevels[acuityStep];
-
-      if (direction === current.dir) {
-        if (acuityStep < acuityLevels.length - 1) {
-          acuityStep++;
-          updateTumblingE();
-          feedback.innerHTML = `<span class="text-emerald-400"><i class="fa-solid fa-check"></i> সঠিক উত্তর! পরবর্তী তীক্ষ্ণ ফন্টে অগ্রসর হচ্ছে...</span>`;
-        } else {
-          feedback.innerHTML = `<span class="text-teal-300 font-bold"><i class="fa-solid fa-star"></i> চমৎকার! আপনার দৃষ্টিশক্তি ২০/১৫ মাত্রায় নিখুঁত।</span>`;
-        }
-      } else {
-        feedback.innerHTML = `<span class="text-amber-400"><i class="fa-solid fa-circle-exclamation"></i> উত্তরটি সঠিক হয়নি। আপনার মৃদু দৃষ্টিস্বল্পতা থাকতে পারে।</span>`;
-      }
-    }
-
-    // Color Blindness Answer
-    function checkColorAnswer(val) {
-      const feedback = document.getElementById('colorFeedback');
-      if (val === '74') {
-        feedback.innerHTML = `<span class="text-emerald-400 font-bold"><i class="fa-solid fa-check"></i> স্বাভাবিক ট্রাইক্রোমেটিক দৃষ্টি (৭৪ সংখ্যাটি সঠিক)।</span>`;
-      } else {
-        feedback.innerHTML = `<span class="text-rose-400 font-semibold"><i class="fa-solid fa-triangle-exclamation"></i> লাল-সবুজ বর্ণান্ধতা সন্দেহজনক। হাসপাতালে ক্লিনিক্যাল পরীক্ষা করান।</span>`;
-      }
-    }
-
-    // Astigmatism Answer
-    function checkAstigAnswer(isUniform) {
-      const feedback = document.getElementById('astigFeedback');
-      if (isUniform) {
-        feedback.innerHTML = `<span class="text-teal-300 font-semibold"><i class="fa-solid fa-check"></i> সকল রেখা সমান স্পষ্ট। কর্নিয়াল অ্যাস্টিগম্যাটিজম শনাক্ত হয়নি।</span>`;
-      } else {
-        feedback.innerHTML = `<span class="text-amber-300 font-semibold"><i class="fa-solid fa-circle-exclamation"></i> রেখার অস্পষ্টতা সাধারণত সিলিন্ডার বা অ্যাস্টিগম্যাটিজম নির্দেশ করে।</span>`;
-      }
-    }
-
-    // FAQ Accordion Handler
     function toggleFaq(index) {
       const content = document.getElementById(`faqContent${index}`);
       const icon = document.getElementById(`faqIcon${index}`);
@@ -1777,7 +1750,6 @@
       }
     }
 
-    // Doctor Filter
     function filterDoctors(category) {
       const cards = document.querySelectorAll('.doctor-card');
       cards.forEach(card => {
@@ -1789,7 +1761,6 @@
       });
     }
 
-    // Modal Control: Appointment
     function openAppointmentModal(defaultDepartment) {
       const modal = document.getElementById('appointmentModal');
       const deptSelect = document.getElementById('modalDeptSelect');
@@ -1817,7 +1788,6 @@
       document.body.classList.remove('overflow-hidden');
     }
 
-    // Modal Control: Insurance
     function openInsuranceModal() {
       document.getElementById('insuranceModal').classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
@@ -1828,31 +1798,23 @@
       document.body.classList.remove('overflow-hidden');
     }
 
-    // Form Submission & Toast Trigger (Zero Alert Replacement)
     function handleAppointmentSubmit(e) {
       e.preventDefault();
-      const patientName = document.getElementById('patientName').value || 'রোগী';
-      const dept = document.getElementById('modalDeptSelect').value;
+      const patientName = document.getElementById('patientName').value || 'Patient';
       const branch = document.getElementById('modalBranchSelect').value;
 
       closeAppointmentModal();
-      
       document.getElementById('appointmentForm').reset();
-
-      // Show Custom Success Toast
-      showToast(`সিরিয়াল রিকোয়েস্ট গৃহীত হয়েছে!`, `ধন্যবাদ ${patientName}। আমাদের প্রতিনিধি ${branch}-এর জন্য ১৫ মিনিটের মধ্যে আপনাকে কল করবেন।`);
+      showToast('Appointment Serial Requested!', `Thank you ${patientName}. Our representative will contact you within 15 minutes for ${branch}.`);
     }
 
-    // Contact Us Form Submission Handler
     function handleContactFormSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('contactName').value || 'সম্মানিত সেবাগ্রহীতা';
+      const name = document.getElementById('contactName').value || 'Valued Visitor';
       const branch = document.getElementById('contactBranch').value;
 
       document.getElementById('contactUsForm').reset();
-
-      // Trigger modern non-alert toast notification
-      showToast('বার্তা সফলভাবে পাঠানো হয়েছে!', `ধন্যবাদ ${name}। ${branch}-এর হেল্পডেস্ক থেকে শীঘ্রই আপনার সাথে যোগাযোগ করা হবে।`);
+      showToast('Message Sent Successfully!', `Thank you ${name}. The helpdesk at ${branch} will reach out to you shortly.`);
     }
 
     let toastTimer = null;
