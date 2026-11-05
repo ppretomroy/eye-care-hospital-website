@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Eye Camp & Vision Donation Program | Chokher Alo Hospital</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind Configuration matching index.html -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            tealAccent: {
+              500: '#14b8a6',
+              600: '#0d9488',
+            }
+          },
+          boxShadow: {
+            'glow': '0 10px 30px -10px rgba(14, 165, 233, 0.35)',
+            'card': '0 4px 25px -4px rgba(15, 23, 42, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #0284c7;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0369a1;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden custom-scrollbar">
+
+  <!-- Top Emergency & Helpdesk Bar (Identical to index.html) -->
+  <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center text-teal-400 font-medium">
+          <span class="inline-block w-2 h-2 rounded-full bg-teal-400 animate-pulse mr-2"></span>
+          100% Free Eye Camps & Surgery Relief
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Selim Shopping Center (2nd Floor), Bangla School Mor, Sadar Road, Bhola</span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="tel:01981369393" class="hover:text-white transition flex items-center font-semibold text-slate-200">
+          <i class="fa-solid fa-phone-volume text-brand-400 mr-1.5 text-xs"></i> 01981-369393
+        </a>
+        <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 text-emerald-400 transition flex items-center font-semibold text-xs">
+          <i class="fa-brands fa-whatsapp mr-1 text-sm"></i> WhatsApp Serial
+        </a>
+        <div class="hidden sm:flex items-center space-x-2 text-slate-400">
+          <span class="text-xs bg-slate-800 px-2 py-0.5 rounded text-teal-300 font-mono">DGHS Reg: 14892 • Non-Profit Foundation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header (Matching index.html) -->
+  <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Hospital Brand Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-14 h-12 flex items-center justify-center transition group-hover:scale-105">
+            <svg viewBox="0 0 280 180" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#64748B"/>
+              <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#18181B"/>
+              <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#18181B"/>
+              <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+              <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+              <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center flex-wrap gap-1.5">
+              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-tight">Chokher Alo</span>
+              <span class="text-brand-500 font-bold text-xl leading-none">•</span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">Free Eye Camp & Blindness Foundation</p>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="index.html" class="hover:text-brand-600 transition py-2">Home</a>
+          <a href="about.html" class="hover:text-brand-600 transition py-2">About</a>
+          <a href="free-camp.html" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
+           Free Camp
+          </a>
+          <a href="services.html" class="hover:text-brand-600 transition py-2">Services</a>
+          <a href="contact.html" class="hover:text-brand-600 transition py-2">Contact</a>
+          <a href="donation.html" class="hover:text-brand-600 transition py-2">Donate</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="#donate-now" class="relative inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-700 hover:to-tealAccent-500 shadow-md shadow-brand-500/20 hover:shadow-glow transition-all duration-200 transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-heart mr-2 text-rose-300"></i> Donate & Save Sight
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="#donate-now" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-600 text-white sm:hidden">
+            Donate
+          </a>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars-staggered text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 transition-all">
+      <div class="flex flex-col space-y-4 font-semibold text-slate-700">
+        <a href="index.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Hospital Home</a>
+        <a href="#impact" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Camp Impact</a>
+        <a href="#camp-videos" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Live Camp Videos</a>
+        <a href="#beneficiaries" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Patient Reviews</a>
+        <a href="#donate-now" onclick="toggleMobileMenu()" class="text-emerald-700 font-bold py-1">Sponsor Free Surgeries</a>
+        <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+          <a href="#donate-now" onclick="toggleMobileMenu()" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md">
+            <i class="fa-solid fa-hand-holding-heart mr-2"></i> Donate to Cause
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section (Consistent styling with index.html) -->
+  <section class="relative bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 text-white pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-500/20 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-teal-500/20 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Text -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-teal-500/40 text-teal-300 text-xs font-semibold tracking-wide">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            100% FREE EYE CARE FOR UNDERPRIVILEGED PATIENTS
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.18]">
+            Restoring Sight, <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-brand-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Transforming Lives Completely Free</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Through Chokher Alo Free Eye Camp Foundation, thousands of rural patients receive free outdoor OPD consultations, free medicines, prescription spectacles, and 100% free sutureless Phaco cataract surgeries.
+          </p>
+
+          <!-- Hero Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#donate-now" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-500 hover:to-tealAccent-500 shadow-xl shadow-emerald-600/20 transition flex items-center justify-center gap-3">
+              <i class="fa-solid fa-heart text-rose-300"></i>
+              <span>Sponsor a Free Surgery</span>
+            </a>
+            <a href="#register-camp" class="w-full sm:w-auto px-7 py-4 rounded-xl font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-clipboard-user text-brand-400"></i>
+              <span>Register Patient / Request Camp</span>
+            </a>
+          </div>
+
+          <!-- Free Guarantee Badge -->
+          <div class="p-4 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex items-center gap-4 text-left backdrop-blur-md">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl shrink-0">
+              <i class="fa-solid fa-hand-holding-hand"></i>
+            </div>
+            <div class="text-xs sm:text-sm">
+              <span class="font-extrabold text-white block">100% Free Guarantee:</span>
+              <span class="text-slate-300">OPD Checkup + Medicines + Reading Glasses + Phaco Cataract Surgery = ৳0 Cost to Patients.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Card: Live Fundraising Tracker -->
+        <div class="lg:col-span-5 relative">
+          <div class="bg-slate-900 border-2 border-brand-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden backdrop-blur-md">
+            <div class="absolute -right-12 -top-12 w-32 h-32 bg-brand-500/10 rounded-full blur-xl"></div>
+            
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest font-extrabold text-brand-400">Current Campaign 2026</span>
+                <h3 class="text-xl font-black text-white">Bhola & Coastal Relief Goal</h3>
+              </div>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-full font-bold animate-pulse">
+                Live Status
+              </span>
+            </div>
+
+            <!-- Fundraising Numbers -->
+            <div class="space-y-4">
+              <div class="flex justify-between items-baseline">
+                <div>
+                  <p class="text-xs text-slate-400">Total Funds Raised</p>
+                  <p class="text-3xl font-black text-emerald-400">৳ 18,45,000</p>
+                </div>
+                <div class="text-right">
+                  <p class="text-xs text-slate-400">Target Goal</p>
+                  <p class="text-xl font-bold text-slate-300">৳ 25,000,000</p>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div>
+                <div class="w-full bg-slate-800 rounded-full h-4 overflow-hidden p-0.5 border border-slate-700">
+                  <div class="bg-gradient-to-r from-brand-500 via-teal-400 to-emerald-400 h-full rounded-full transition-all duration-1000" style="width: 74%;"></div>
+                </div>
+                <div class="flex justify-between items-center text-xs text-slate-400 mt-2 font-medium">
+                  <span>74% Goal Achieved</span>
+                  <span>1,230 / 1,600 Surgeries Funded</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Metrics -->
+            <div class="grid grid-cols-2 gap-3 my-6 pt-4 border-t border-slate-800">
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <p class="text-xl font-black text-white">32,500+</p>
+                <p class="text-[11px] text-slate-400">Free OPD Screenings</p>
+              </div>
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <p class="text-xl font-black text-emerald-400">4,890+</p>
+                <p class="text-[11px] text-slate-400">Free Phaco Surgeries</p>
+              </div>
+            </div>
+
+            <a href="#donate-now" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-tealAccent-500 hover:from-emerald-600 hover:to-tealAccent-600 text-slate-950 font-black text-xs uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2">
+              <i class="fa-solid fa-heart"></i>
+              <span>Donate Now & Save Sight</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Camp Achievements Grid -->
+  <section id="impact" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full">Foundation Footprint</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">Our Free Camp Impact & Achievements</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Connecting specialist surgeons with rural patients to eradicate preventable cataract blindness.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 text-center hover:border-brand-500 transition shadow-sm">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-tent"></i>
+          </div>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">142+</p>
+          <p class="text-xs font-semibold text-slate-600 mt-1">Free Eye Camps Organized</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 text-center hover:border-brand-500 transition shadow-sm">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-users text-xl"></i>
+          </div>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">85,000+</p>
+          <p class="text-xs font-semibold text-slate-600 mt-1">Patients Screened for Free</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 text-center hover:border-brand-500 transition shadow-sm">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-glasses"></i>
+          </div>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">24,000+</p>
+          <p class="text-xs font-semibold text-slate-600 mt-1">Free Specs Distributed</p>
+        </div>
+
+        <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 text-center hover:border-brand-500 transition shadow-sm">
+          <div class="w-12 h-12 mx-auto rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">100%</p>
+          <p class="text-xs font-semibold text-slate-600 mt-1">Free Sutureless Phaco Surgery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Video Gallery -->
+  <section id="camp-videos" class="py-20 bg-slate-900 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-teal-400 bg-teal-950/80 border border-teal-500/30 px-3.5 py-1.5 rounded-full inline-flex items-center gap-2">
+            <i class="fa-brands fa-youtube text-rose-500 text-sm"></i> Video Proof & Field Coverage
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 tracking-tight">
+            Watch Live Free Eye Camps in Action
+          </h2>
+          <p class="text-slate-400 text-xs sm:text-sm mt-2 max-w-xl">
+            See how donor contributions directly fund free medical consultations, specs, and sutureless cataract surgeries.
+          </p>
+        </div>
+      </div>
+
+      <!-- Camp Videos Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Video 1 -->
+        <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-teal-400 transition">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/epBnCh549Ls?rel=0&modestbranding=1" 
+                title="Free Eye Camp Bhola" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-teal-500/20 text-teal-300 px-2.5 py-0.5 rounded border border-teal-500/30">
+                Bhola Free Camp 2025
+              </span>
+              <h3 class="font-bold text-base text-white mt-2 group-hover:text-teal-400 transition leading-snug">
+                1,200 Patients Screened & Free Cataract Surgeries Conducted
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                Watch our surgical team provide free checkups, eye drops, and surgical transports in Bhola district.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-700/60 flex items-center justify-between text-xs text-teal-400 font-semibold">
+            <span><i class="fa-solid fa-check-circle mr-1"></i> 100% Free Service</span>
+            <span class="text-slate-400 text-[11px]">800+ Free Glasses</span>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-brand-400 transition">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/n_3cG9oeuNo?rel=0&modestbranding=1" 
+                title="Sutureless Phaco Surgery" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-brand-500/20 text-brand-300 px-2.5 py-0.5 rounded border border-brand-500/30">
+                Live Surgery Demo
+              </span>
+              <h3 class="font-bold text-base text-white mt-2 group-hover:text-brand-400 transition leading-snug">
+                Sutureless Phaco Cataract Surgery Implemented Free
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                Demonstrating foldable artificial lens insertion through micro-incisions with zero stitches or pain.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-700/60 flex items-center justify-between text-xs text-brand-400 font-semibold">
+            <span><i class="fa-solid fa-microscope mr-1"></i> Centurion Phaco</span>
+            <span class="text-slate-400 text-[11px]">No Stitches Needed</span>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl flex flex-col justify-between group hover:border-amber-400 transition">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/ojDlI4tOKvU?rel=0&modestbranding=1" 
+                title="Coastal Eye Relief" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded border border-amber-500/30">
+                Coastal Relief Outreach
+              </span>
+              <h3 class="font-bold text-base text-white mt-2 group-hover:text-amber-400 transition leading-snug">
+                Reaching Remote River Islands (Char Area) with Medical Teams
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                Bringing specialist eye doctors directly to river island dwellers who have no access to hospital facilities.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-700/60 flex items-center justify-between text-xs text-amber-400 font-semibold">
+            <span><i class="fa-solid fa-ship mr-1"></i> River Char Outreach</span>
+            <span class="text-slate-400 text-[11px]">Mobile OPD Unit</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Beneficiary Testimonials -->
+  <section id="beneficiaries" class="py-24 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3.5 py-1.5 rounded-full">Real Impact</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
+          Stories of Restored Sight & Hope
+        </h2>
+        <p class="text-slate-600 text-sm mt-2">
+          Read emotional testimonials from poor patients whose sight was saved by free cataract surgeries.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Review 1 -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6 font-normal">
+              "I lost my vision in both eyes due to severe cataracts 3 years ago and couldn't afford surgery. Chokher Alo Free Eye Camp performed my Phaco surgery for 100% free. Today, I can see clearly again!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-600 to-tealAccent-500 text-white font-bold flex items-center justify-center text-sm shadow">
+              RK
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Rahima Khatun (65 yrs)</h4>
+              <p class="text-xs text-slate-500">Bhola Sadar • Free Phaco Beneficiary</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6 font-normal">
+              "The doctors at the free camp checked my eyes, provided eye drops, and gave me reading glasses. I didn't have to pay anything. May Allah bless the donors who made this possible!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-teal-600 to-emerald-500 text-white font-bold flex items-center justify-center text-sm shadow">
+              AM
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Abdul Mia (58 yrs)</h4>
+              <p class="text-xs text-slate-500">Day Laborer • Free Specs Beneficiary</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white p-8 rounded-3xl border border-slate-200/80 shadow-card flex flex-col justify-between hover:shadow-xl transition">
+          <div>
+            <div class="flex text-amber-400 text-xs mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-slate-700 text-sm leading-relaxed mb-6 font-normal">
+              "Our organization sponsored 10 free cataract surgeries through Chokher Alo foundation. The team provided video proof and post-op reports. Truly transparent non-profit work!"
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex items-center space-x-3">
+            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-indigo-600 to-purple-500 text-white font-bold flex items-center justify-center text-sm shadow">
+              TH
+            </div>
+            <div>
+              <h4 class="font-bold text-slate-900 text-sm">Tanvir Hasan</h4>
+              <p class="text-xs text-slate-500">Corporate Donor • Dhaka</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation / Sponsorship Tiers Section -->
+  <section id="donate-now" class="py-24 bg-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+          <i class="fa-solid fa-heart text-rose-500"></i> Sadqah Jariyah & Vision Fund
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black text-slate-900 mt-4 tracking-tight">
+          Sponsor Free Cataract Surgeries Today
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Every single Taka goes directly toward surgical consumables, foldable IOL lenses, and eye drop medications for needy patients.
+        </p>
+      </div>
+
+      <!-- Donation Options Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Tier 1 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Sponsor 1 Patient</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">1 Free Phaco Surgery</h3>
+            <p class="text-xs text-slate-500 mt-2">Covers complete sutureless Phaco surgery, foldable IOL lens, medications, and transport for 1 needy patient.</p>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-brand-600">৳ 15,000</span>
+              <span class="text-slate-500 text-xs">/ per patient</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Hydrophobic Foldable IOL Lens</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Free eye drops & post-op medicines</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Patient photo & video report sent to donor</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('1 Free Phaco Surgery', 15000)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition shadow-md">
+            Donate ৳15,000
+          </button>
+        </div>
+
+        <!-- Tier 2: Most Popular -->
+        <div class="bg-gradient-to-b from-brand-900 to-slate-900 text-white rounded-3xl p-8 border-2 border-tealAccent-500 relative flex flex-col justify-between shadow-2xl">
+          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-950 text-[10px] font-black uppercase px-3.5 py-1 rounded-full">
+            Most Impactful
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Sponsor 5 Patients</span>
+            <h3 class="text-2xl font-black text-white mt-2">5 Free Phaco Surgeries</h3>
+            <p class="text-xs text-slate-300 mt-2">Restores vision for 5 underprivileged elderly individuals in rural camp areas.</p>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-teal-300">৳ 75,000</span>
+              <span class="text-slate-400 text-xs">/ 5 patients</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-200">
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 5 Complete Cataract Microsurgeries</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Donor Acknowledgment Certificate</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Direct surgical updates provided</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Tax receipt issued upon request</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('5 Free Phaco Surgeries', 75000)" class="mt-8 w-full py-3.5 rounded-xl bg-tealAccent-500 hover:bg-tealAccent-600 text-slate-950 font-black text-xs transition shadow-lg">
+            Donate ৳75,000
+          </button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Full Camp Sponsor</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">Entire Free Eye Camp</h3>
+            <p class="text-xs text-slate-500 mt-2">Sponsor an entire eye camp screening 500+ patients and funding 20 free Phaco surgeries.</p>
+            <div class="my-6">
+              <span class="text-3xl font-extrabold text-brand-600">৳ 300,000</span>
+              <span class="text-slate-500 text-xs">/ Full Camp</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 500+ Free OPD Screenings & Glasses</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 20 Free Sutureless Phaco Surgeries</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Camp dedicated in honor of donor/family</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('Entire Free Eye Camp Sponsor', 300000)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition shadow-md">
+            Sponsor Full Camp
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Payment Channels -->
+      <div class="mt-12 bg-slate-900 text-white p-8 rounded-3xl border border-slate-800 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center lg:text-left">
+          <span class="text-xs font-bold uppercase tracking-wider text-teal-400">Direct Donation Payment Channel</span>
+          <h4 class="text-xl font-bold text-white">Official Bank Account</h4>
+          <p class="text-xs text-slate-300">Bank Name: <span class="font-semibold text-white">Islami Bank Bangladesh Ltd</span></p>
+          <p class="text-xs text-slate-300">Account Title: <span class="font-mono text-teal-300 font-bold text-sm">Chokher Alo Foundation</span></p>
+          <p class="text-xs text-slate-300">Account No: <span class="font-mono text-teal-300 font-bold text-sm">2050XXXXXXXXX</span> | Branch: <span class="font-semibold text-white">Bhola Branch</span></p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="openDonationModal('Custom Donation Amount', 0)" class="px-6 py-3.5 bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-500 hover:to-tealAccent-500 text-white font-extrabold text-xs rounded-xl shadow transition">
+            Send Custom Donation Amount
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Patient Registration Form -->
+  <section id="register-camp" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-200">
+        <div class="flex items-center space-x-3 mb-6">
+          <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div>
+            <h3 class="font-black text-2xl text-slate-900">Register Needy Patient or Request Camp</h3>
+            <p class="text-xs text-slate-500">Are you a needy patient or local leader requesting a free camp in your village?</p>
+          </div>
+        </div>
+
+        <form onsubmit="handleCampRegistration(event)" class="space-y-4 text-xs sm:text-sm">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Full Name *</label>
+              <input type="text" required placeholder="e.g. Md. Abdul Rahim" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Mobile Phone Number *</label>
+              <input type="tel" required placeholder="01XXXXXXXXX" pattern="^(?:\+?88)?01[3-9]\d{8}$" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">District / Upazila Location *</label>
+              <input type="text" required placeholder="e.g. Bhola Sadar / Char Fasson" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            </div>
+            <div>
+              <label class="block font-bold text-slate-700 mb-1">Request Purpose *</label>
+              <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
+                <option value="Register Needy Patient for Free Surgery">Register Needy Patient for Free Surgery</option>
+                <option value="Request a New Free Camp in My Area">Request a New Free Camp in My Area</option>
+                <option value="Sponsor / Donor Inquiry">Sponsor / Donor Inquiry</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-bold text-slate-700 mb-1">Medical Symptoms or Camp Notes</label>
+            <textarea rows="3" placeholder="Describe eye problems or details of your area for organizing camp..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-4 rounded-xl bg-slate-900 hover:bg-brand-600 font-extrabold text-white text-sm shadow-md transition">
+            Submit Free Camp Request
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer (Identical to index.html) -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Col 1: About -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3 text-white">
+            <div class="w-12 h-10 flex items-center justify-center">
+              <svg viewBox="0 0 280 180" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#94A3B8"/>
+                <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#F8FAFC"/>
+                <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#F8FAFC"/>
+                <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+                <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+                <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-base font-extrabold tracking-tight block text-white">CHOKHER ALO</span>
+              <span class="text-[10px] text-slate-400">Free Eye Camp & Relief Foundation</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Chokher Alo Free Eye Camp Foundation is a non-profit initiative dedicated to restoring vision and eliminating preventable cataract blindness across Bangladesh.
+          </p>
+          <div class="flex space-x-3 pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/8801711000000" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Free Camp Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#impact" class="hover:text-white transition">Camp Impact</a></li>
+            <li><a href="#camp-videos" class="hover:text-white transition">Live Video Proofs</a></li>
+            <li><a href="#beneficiaries" class="hover:text-white transition">Patient Reviews</a></li>
+            <li><a href="#donate-now" class="hover:text-white transition">Sponsor Cataract Surgery</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Hospital Main</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">Hospital Main Site</a></li>
+            <li><a href="index.html#specialists" class="hover:text-white transition">BMDC Specialist Doctors</a></li>
+            <li><a href="index.html#vision-mission" class="hover:text-white transition">Vision & Core Values</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition">Hospital Locations</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Camp Helpline</h4>
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+            <p class="text-[11px] text-teal-400 font-bold mb-1"><i class="fa-solid fa-hand-holding-heart mr-1"></i> Camp Registration Desk</p>
+            <p class="text-white font-mono text-sm font-bold">01981-369393</p>
+            <p class="text-slate-300 text-xs mt-1">WhatsApp: +8801711000000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-slate-400 text-xs">
+        <p>&copy; 2026 Chokher Alo Free Eye Camp Foundation. All rights reserved.</p>
+        <p class="mt-3 sm:mt-0 text-[11px]">DGHS Licensed & Non-Profit Foundation</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Donation Modal -->
+  <div id="donationModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+      <button onclick="closeDonationModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-2 rounded-full hover:bg-slate-100 transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4">
+        <i class="fa-solid fa-heart-pulse"></i>
+      </div>
+      <h3 class="font-extrabold text-xl text-slate-900" id="modalTierTitle">Sponsor Vision</h3>
+      <p class="text-xs text-slate-500 mt-1 mb-4">Please enter your donation details to receive an official electronic receipt.</p>
+
+      <form onsubmit="handleDonationSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Donation Amount (BDT) *</label>
+          <input type="number" id="modalAmountInput" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 font-bold text-emerald-700 text-base focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Donor Full Name *</label>
+          <input type="text" required placeholder="e.g. Dr. Kazi Shahed" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Mobile Phone Number *</label>
+          <input type="tel" required placeholder="017XXXXXXXX" pattern="^(?:\+?88)?01[3-9]\d{8}$" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Payment Method *</label>
+          <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="Bank Transfer">Bank Transfer (Islami Bank Bangladesh Ltd)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-700 hover:to-tealAccent-500 font-extrabold text-white text-xs shadow-lg transition">
+          Confirm Donation Pledge
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast System -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex items-start gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="flex-1">
+      <h4 class="font-bold text-xs sm:text-sm text-white" id="toastTitle">Notification</h4>
+      <p class="text-xs text-slate-300 mt-0.5" id="toastMessage">Action completed.</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button (Identical to index.html) -->
+  <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Hospital,%20I%20want%20to%20know%20about%20Free%20Eye%20Camps%20and%20Donations" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3.5 shadow-2xl flex items-center gap-2 group transition-all duration-300 transform hover:scale-105" title="WhatsApp Serial">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold">
+      WhatsApp Serial
+    </span>
+  </a>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      menu.classList.toggle('hidden');
+      if (menu.classList.contains('hidden')) {
+        icon.className = 'fa-solid fa-bars-staggered text-xl';
+      } else {
+        icon.className = 'fa-solid fa-xmark text-xl';
+      }
+    }
+
+    function openDonationModal(title, amount) {
+      document.getElementById('modalTierTitle').textContent = title;
+      const input = document.getElementById('modalAmountInput');
+      input.value = amount > 0 ? amount : '';
+      document.getElementById('donationModal').classList.remove('hidden');
+    }
+
+    function closeDonationModal() {
+      document.getElementById('donationModal').classList.add('hidden');
+    }
+
+    function handleDonationSubmit(e) {
+      e.preventDefault();
+      closeDonationModal();
+      showToast('Thank You Dear Donor!', 'Your pledge has been recorded. Our foundation desk will contact you via SMS/WhatsApp with the receipt.');
+    }
+
+    function handleCampRegistration(e) {
+      e.preventDefault();
+      showToast('Registration Received!', 'Thank you. Our free camp team will verify the details and contact you shortly.');
+      e.target.reset();
+    }
+
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => { toast.classList.add('hidden'); }, 5000);
+    }
+  </script>
+</body>
+</html>
