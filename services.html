@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprehensive Eye Care Services | Chokher Alo Hospital</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind Configuration matching index.html -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            tealAccent: {
+              500: '#14b8a6',
+              600: '#0d9488',
+            }
+          },
+          boxShadow: {
+            'glow': '0 10px 30px -10px rgba(14, 165, 233, 0.35)',
+            'card': '0 4px 25px -4px rgba(15, 23, 42, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #0284c7;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0369a1;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden custom-scrollbar">
+
+  <!-- Top Emergency & Helpdesk Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center text-teal-400 font-medium">
+          <span class="inline-block w-2 h-2 rounded-full bg-teal-400 animate-pulse mr-2"></span>
+          24/7 Emergency Eye Trauma & Specialized Care
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Selim Shopping Center (2nd Floor), Bangla School Mor, Sadar Road, Bhola</span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="tel:01981369393" class="hover:text-white transition flex items-center font-semibold text-slate-200">
+          <i class="fa-solid fa-phone-volume text-brand-400 mr-1.5 text-xs"></i> 01981-369393
+        </a>
+        <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 text-emerald-400 transition flex items-center font-semibold text-xs">
+          <i class="fa-brands fa-whatsapp mr-1 text-sm"></i> WhatsApp Serial
+        </a>
+        <div class="hidden sm:flex items-center space-x-2 text-slate-400">
+          <span class="text-xs bg-slate-800 px-2 py-0.5 rounded text-teal-300 font-mono">DGHS Reg: 14892 • BMDC Recognized</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Hospital Brand Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-14 h-12 flex items-center justify-center transition group-hover:scale-105">
+            <svg viewBox="0 0 280 180" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#64748B"/>
+              <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#18181B"/>
+              <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#18181B"/>
+              <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+              <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+              <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center flex-wrap gap-1.5">
+              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-tight">Chokher Alo</span>
+              <span class="text-brand-500 font-bold text-xl leading-none">•</span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">Retina Glaucoma Hospital & Phaco Center</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="index.html" class="hover:text-brand-600 transition py-2">Home</a>
+          <a href="about.html" class="hover:text-brand-600 transition py-2">About</a>
+          <a href="free-camp.html" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
+           Free Camp
+          </a>
+          <a href="services.html" class="hover:text-brand-600 transition py-2">Services</a>
+          <a href="contact.html" class="hover:text-brand-600 transition py-2">Contact</a>
+          <a href="donation.html" class="hover:text-brand-600 transition py-2">Donate</a>
+        </nav>
+
+        <!-- CTA & Fast Actions -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="relative inline-flex items-center justify-center px-5 py-2.5 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-700 hover:to-tealAccent-500 shadow-md shadow-brand-500/20 hover:shadow-glow transition-all duration-200 transform hover:-translate-y-0.5">
+            <i class="fa-regular fa-calendar-check mr-2"></i> Book Appointment
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-brand-600 text-white sm:hidden">
+            Book
+          </button>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars-staggered text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 transition-all">
+      <div class="flex flex-col space-y-4 font-semibold text-slate-700">
+        <a href="index.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Home</a>
+        <a href="services.html" onclick="toggleMobileMenu()" class="text-brand-600 font-bold py-1">All Hospital Services</a>
+        <a href="free-camp.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Free Eye Camps</a>
+        <a href="index.html#specialists" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Eye Specialists</a>
+        <a href="donate.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Donation Portal</a>
+        <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+          <button onclick="openAppointmentModal('General Comprehensive Eye Exam'); toggleMobileMenu();" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md">
+            <i class="fa-solid fa-calendar-plus mr-2"></i> Book Doctor Serial
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Services Hero Banner -->
+  <section class="relative bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white py-16 md:py-24 overflow-hidden">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-500/15 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-10 w-80 h-80 rounded-full bg-teal-500/15 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto space-y-5">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-950/80 border border-brand-500/40 text-brand-300 text-xs font-semibold tracking-wide">
+          <i class="fa-solid fa-hospital-user text-teal-400"></i> Chokher Alo Retina Glaucoma Hospital & Phaco Center
+        </span>
+
+        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+          Comprehensive Eye Care & <br>
+          <span class="bg-gradient-to-r from-brand-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Advanced Ophthalmic Treatments</span>
+        </h1>
+
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+          All kinds of eye-related problems are treated at <strong>Chokher Alo Retina Glaucoma Hospital & Phaco Center</strong> (Nizam-Hasina Foundation Hospital) using state-of-the-art German Carl Zeiss & Topcon microscopes, Alcon Centurion Phaco systems, and digital diagnostic suites.
+        </p>
+
+        <!-- Search Bar & Filter Controls -->
+        <div class="pt-4 flex justify-center">
+          <div class="relative w-full sm:w-96">
+            <i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-slate-400 text-sm"></i>
+            <input 
+              type="text" 
+              id="serviceSearch" 
+              onkeyup="filterServices()" 
+              placeholder="Search service e.g. Cataract, Retina, Laser, Squint..." 
+              class="w-full pl-11 pr-4 py-3 bg-slate-800/90 border border-slate-700 rounded-xl text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-500 shadow-inner"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Comprehensive Services Grid (All 14 Services) -->
+  <section class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="servicesGrid">
+        
+        <!-- Service 1: Cataract Surgery -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-brand-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="cataract phaco alcon centurion amo zeiss topcon microscope">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-eye-low-vision"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-brand-50 text-brand-700 px-2.5 py-1 rounded-md">Phaco Microsurgery</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-brand-600 transition">1. Cataract Surgery (5-Minute Phaco)</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Cataract Surgery performed using world-famous <strong>American Alcon Centurion®</strong> and <strong>AMO Phaco</strong> machines equipped with <strong>German Carl Zeiss</strong> & <strong>Topcon High Quality microscopes</strong>. Precision sutureless surgery completed within 5 minutes.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-emerald-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> 5-Min Sutureless</span>
+            <button onclick="openAppointmentModal('Cataract & Phaco Surgery')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: DCR and DCT Operation -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-teal-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="dcr dct tear duct watering eye lacrimal gland obstruction">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-droplet font-bold"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md">Tear Duct Surgery</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-teal-600 transition">2. DCR & DCT Operation (Watering Eye)</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              A watery eye can be due to many causes, essentially stemming from an imbalance between tear production by the tear gland and drainage blockage. DCR (Dacryocystorhinostomy) and DCT surgeries bypass blocked nasolacrimal ducts to restore normal drainage.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-teal-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Nasolacrimal Bypass</span>
+            <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Pterygium & Chalazion Operation -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-indigo-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="pterygium chalazion autograft conjunctiva growth cyst">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-circle-nodes"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md">Corneal & Eyelid Microsurgery</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-indigo-600 transition">3. Pterygium & Chalazion Surgery</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              The pterygium tissue is meticulously excised and the bare scleral area is covered with an autograft extracted from the patient’s own conjunctiva to prevent recurrence. Chalazion eyelid cysts are also safely drained and removed.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-indigo-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Conjunctival Autograft</span>
+            <button onclick="openAppointmentModal('Dry Eye Spa')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-indigo-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 4: Glaucoma Operation & Treatment -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-emerald-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="glaucoma iop intraocular pressure trabeculectomy laser iridotomy vision loss">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-gauge-high"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-md">Glaucoma Specialty</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-emerald-600 transition">4. Glaucoma Operation & Treatment</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              While damage caused by glaucoma cannot be reversed, early treatment, laser iridotomy, trabeculectomy filtering operations, and regular eye pressure checkups slow down or prevent further permanent optic nerve vision loss.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-emerald-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Optic Nerve Defense</span>
+            <button onclick="openAppointmentModal('Glaucoma Clinic')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 5: YAG Laser & Green Laser -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-rose-500 transition-all duration-300 flex flex-col justify-between group" data-category="laser" data-keywords="yag laser green laser nd:yag capsulotomy retina photocoagulation">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-rose-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-rose-50 text-rose-700 px-2.5 py-1 rounded-md">Advanced Laser Unit</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-rose-600 transition">5. YAG Laser & Green Laser</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Nd:YAG lasers optically pumped using laser diodes provide painless posterior capsulotomy after cataract surgery and peripheral iridotomy. Green laser photocoagulation treats retinal tears, diabetic leakage, and macular edema.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-rose-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Non-Invasive Laser</span>
+            <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 6: Retina Treatment -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-purple-500 transition-all duration-300 flex flex-col justify-between group" data-category="laser" data-keywords="retina photoreceptors rods cones macula detachment vitreo-retinal">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-purple-50 text-purple-700 px-2.5 py-1 rounded-md">Vitreo-Retina Care</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-purple-600 transition">6. Specialized Retina Treatment</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              The retina is the innermost, light-sensitive layer of neural tissue containing photoreceptor cells (rods and cones). We provide advanced treatment for retinal detachment, macular degeneration, and vascular occlusions.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-purple-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Photoreceptor Protection</span>
+            <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-purple-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 7: Intra-Vitreal Avastin Injection -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-cyan-500 transition-all duration-300 flex flex-col justify-between group" data-category="laser" data-keywords="avastin anti-vegf intravitreal injection amd diabetic retinopathy rvo macular edema">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-syringe"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-cyan-50 text-cyan-700 px-2.5 py-1 rounded-md">Anti-VEGF Injection Therapy</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-cyan-600 transition">7. Intra-Vitreal Avastin Injection</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Intravitreal drug delivery directly into the vitreous cavity is a highly effective treatment for severe retinal conditions, including Age-Related Macular Degeneration (AMD), Diabetic Retinopathy, and Retinal Vein Occlusions (RVO).
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-cyan-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Sterile Injection Suite</span>
+            <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-cyan-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 8: Color Fundus Photography & OCT -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-amber-500 transition-all duration-300 flex flex-col justify-between group" data-category="diagnostic" data-keywords="oct fundus photography optical coherence tomography digital retina scan imaging">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-camera font-bold"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 px-2.5 py-1 rounded-md">Digital Retinal Imaging</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-amber-600 transition">8. Color Fundus Photography & OCT</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              High-definition Fundus photography provides color and red-free digital images of the retina. Combined with Optical Coherence Tomography (OCT), it captures micron-level cross-sectional scans of retinal nerve layers.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-amber-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Micron HD Imaging</span>
+            <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-amber-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 9: Child Cataract & Probing Operation -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-pink-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="child pediatric cataract probing lacrimal drainage nasolacrimal congenital">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-pink-50 text-pink-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-pink-50 text-pink-700 px-2.5 py-1 rounded-md">Pediatric Ophthalmology</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-pink-600 transition">9. Child Cataract & Probing Operation</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Specialized pediatric care addressing lacrimal drainage structures and congenital tear duct blockages. Gentle lacrimal probing opens blocked nasolacrimal grooves, while pediatric cataract surgery preserves early vision development.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-pink-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Specialized Child Care</span>
+            <button onclick="openAppointmentModal('Pediatric Eye Care')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-pink-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 10: Squint Surgery (Strabismus) -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-blue-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="squint strabismus alignment eye muscle correction cosmetic binocular vision">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-eye text-2xl"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md">Ocular Muscle Surgery</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-blue-600 transition">10. Squint Surgery (Strabismus Correction)</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Squint (Strabismus) occurs when both eyes are misaligned. Contrary to common myths, squint is NOT permanent and can be fully corrected through extraocular muscle alignment microsurgery for both children and adults.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-blue-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Alignment Corrected</span>
+            <button onclick="openAppointmentModal('Pediatric Eye Care')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-blue-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 11: Biometry, Pachymetry, A-Scan & B-Scan -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-slate-700 transition-all duration-300 flex flex-col justify-between group" data-category="diagnostic" data-keywords="biometry pachymetry a-scan b-scan ultrasound iol power corneal thickness">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-slate-100 text-slate-800 flex items-center justify-center text-2xl mb-6 group-hover:bg-slate-900 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-wave-square"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-slate-100 text-slate-800 px-2.5 py-1 rounded-md">Ophthalmic Ultrasound Suite</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-brand-600 transition">11. Biometry, Pachymetry, A-Scan & B-Scan</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              High-frequency diagnostic ultrasound safely probes the delicate internal structures of the eye without damage. Provides precise IOL power calculations (Biometry), corneal thickness measurement (Pachymetry), and posterior segment B-Scans.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-slate-700 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Precise IOL & Ultrasound</span>
+            <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
+              Book Test
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 12: Pathological Lab & ECG -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-rose-600 transition-all duration-300 flex flex-col justify-between group" data-category="diagnostic" data-keywords="pathology lab ecg blood test cardiac electrocardiogram pre-op health">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-rose-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-rose-50 text-rose-700 px-2.5 py-1 rounded-md">Diagnostic Lab & Cardiac</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-rose-600 transition">12. Pathological Lab & ECG Services</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              In-house pathology lab for routine pre-operative blood screening, HbA1c diabetic monitoring, and Electrocardiogram (ECG) testing to evaluate cardiac health and electrical activity prior to ocular surgeries.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-rose-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Complete Pre-Op Fitness</span>
+            <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-bold text-xs transition">
+              Book Test
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 13: Diabetic & Hypertensive Retinopathy -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-teal-600 transition-all duration-300 flex flex-col justify-between group" data-category="laser" data-keywords="diabetic retinopathy hypertension blood pressure retinal bleeding microaneurysms">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-hospital-user"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-teal-700 px-2.5 py-1 rounded-md">Diabetic & Vascular Clinic</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-teal-600 transition">13. Diabetic & Hypertensive Retinopathy</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Diabetic and Hypertensive retinopathy are leading causes of visual impairment and blindness. Our specialized clinic provides comprehensive fundus evaluations, angiography, laser sealing, and strict glycemic monitoring protocols.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-teal-600 font-bold"><i class="fa-solid fa-circle-check mr-1"></i> Retinal Bleeding Control</span>
+            <button onclick="openAppointmentModal('Retina & Diabetic Eye')" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-teal-600 text-white font-bold text-xs transition">
+              Book Serial
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 14: 24/7 Eye Emergency -->
+        <div class="service-card bg-white rounded-3xl p-8 border border-slate-200/80 shadow-card hover:shadow-xl hover:border-rose-500 transition-all duration-300 flex flex-col justify-between group" data-category="surgical" data-keywords="emergency trauma injury chemical splash foreign body acute glaucoma casualties">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-rose-600 group-hover:text-white transition duration-300 shadow-sm">
+              <i class="fa-solid fa-truck-medical"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-rose-100 text-rose-800 px-2.5 py-1 rounded-md">24/7 Urgent Sight Care</span>
+            <h3 class="font-black text-xl text-slate-900 mt-3 group-hover:text-rose-600 transition">14. 24/7 Eye Emergency & Trauma Casualty</h3>
+            <p class="text-slate-600 text-xs sm:text-sm mt-3 leading-relaxed">
+              Our specialized eye casualty department handles urgent sight threats, ocular chemical burns, corneal lacerations, foreign body removal, and acute glaucoma spikes on a 24/7 clinical priority basis.
+            </p>
+          </div>
+          <div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs text-rose-600 font-bold"><i class="fa-solid fa-bolt mr-1"></i> Open 24 Hours / 7 Days</span>
+            <a href="tel:09666710610" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold text-xs transition">
+              Emergency Call
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Institutional Assurance Footer Banner -->
+      <div class="mt-16 bg-gradient-to-r from-slate-900 via-brand-950 to-slate-900 text-white p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Trusted Healthcare Partner</span>
+          <h3 class="text-2xl font-extrabold text-white">Chokher Alo Retina Glaucoma Hospital & Phaco Center</h3>
+          <p class="text-slate-300 text-xs sm:text-sm max-w-xl">
+            All kinds of complex eye-related problems are diagnosed and treated with utmost care by senior FCPS & DO BMDC registered specialists.
+          </p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <button onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-brand-500 to-tealAccent-500 hover:from-brand-600 hover:to-tealAccent-600 text-slate-950 font-black text-xs uppercase tracking-wider transition shadow-lg">
+            Book Appointment Serial
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Col 1: About -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3 text-white">
+            <div class="w-12 h-10 flex items-center justify-center">
+              <svg viewBox="0 0 280 180" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#94A3B8"/>
+                <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#F8FAFC"/>
+                <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#F8FAFC"/>
+                <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+                <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+                <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-base font-extrabold tracking-tight block text-white">CHOKHER ALO</span>
+              <span class="text-[10px] text-slate-400">Retina Glaucoma Hospital & Phaco Center</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Chokher Alo Retina Glaucoma Hospital & Phaco Center is a premier center for blindness prevention, retina, glaucoma, and modern Phaco cataract treatments in Bangladesh.
+          </p>
+          <div class="flex space-x-3 pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/8801711000000" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Services Navigation</h4>
+          <ul class="space-y-2">
+            <li><a href="services.html" class="hover:text-white transition">Cataract Phaco Surgery</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Retina & Glaucoma Laser</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Squint & Child Care</a></li>
+            <li><a href="services.html" class="hover:text-white transition">Biometry & OCT Scanning</a></li>
+            <li><a href="free-camp.html" class="hover:text-white transition">Free Eye Camps</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Patient Care</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">Hospital Main Site</a></li>
+            <li><a href="index.html#specialists" class="hover:text-white transition">BMDC Doctor Panel</a></li>
+            <li><a href="index.html#vision-mission" class="hover:text-white transition">Vision & Core Values</a></li>
+            <li><a href="donate.html" class="hover:text-white transition">Donate & Save Sight</a></li>
+            <li><a href="#" onclick="openAppointmentModal('General Comprehensive Eye Exam')" class="hover:text-white transition">Online Serial Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Emergency Notice -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Emergency Hotline</h4>
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+            <p class="text-[11px] text-rose-400 font-bold mb-1"><i class="fa-solid fa-bell mr-1"></i> Trauma & Emergency Desk</p>
+            <p class="text-white font-mono text-sm font-bold">09666-710610</p>
+            <p class="text-slate-300 text-xs mt-1">Mobile: 01981-369393</p>
+            <p class="text-[10px] text-slate-500 mt-1">24/7 Emergency trauma team on standby.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-slate-400 text-xs">
+        <p>&copy; 2026 Chokher Alo Retina Glaucoma Hospital & Phaco Center. All rights reserved.</p>
+        <p class="mt-3 sm:mt-0 text-[11px]">Licensed by Directorate General of Health Services (DGHS) Bangladesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Booking Modal -->
+  <div id="appointmentModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative my-8">
+      
+      <button onclick="closeAppointmentModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-2 rounded-full hover:bg-slate-100 transition focus:outline-none">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="flex items-center space-x-3 mb-5">
+        <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-lg">
+          <i class="fa-regular fa-calendar-check"></i>
+        </div>
+        <div>
+          <h3 class="font-extrabold text-xl text-slate-900">Book Doctor Appointment</h3>
+          <p class="text-xs text-slate-500">Our representative will call to confirm your serial number after submission</p>
+        </div>
+      </div>
+
+      <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Select Branch *</label>
+            <select id="modalBranchSelect" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
+              <option value="Bhola Main Branch">Bhola Main Branch (Sadar Rd)</option>
+              <option value="Dhanmondi Branch">Dhanmondi Branch (Dhaka)</option>
+              <option value="Uttara Sector 7 Branch">Uttara Branch (Dhaka)</option>
+              <option value="Banani Branch">Banani Branch (Dhaka)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Department / Specialty *</label>
+            <select id="modalDeptSelect" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
+              <option value="General Comprehensive Eye Exam">General Comprehensive Eye Exam</option>
+              <option value="Cataract & Phaco Surgery">Cataract & Phaco Surgery</option>
+              <option value="DCR & DCT Operation">DCR & DCT Operation</option>
+              <option value="Pterygium & Chalazion Surgery">Pterygium & Chalazion Surgery</option>
+              <option value="Glaucoma Clinic">Glaucoma Clinic</option>
+              <option value="YAG & Green Laser">YAG & Green Laser</option>
+              <option value="Retina & Diabetic Eye">Retina & Diabetic Eye</option>
+              <option value="Intra-Vitreal Avastin Injection">Intra-Vitreal Avastin Injection</option>
+              <option value="Color Fundus Photography & OCT">Color Fundus Photography & OCT</option>
+              <option value="Pediatric Eye Care & Squint">Child Cataract, Probing & Squint</option>
+              <option value="Ultrasound Biometry & B-Scan">Biometry, A-Scan & B-Scan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Preferred Date *</label>
+            <input type="date" id="appointmentDate" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Preferred Shift *</label>
+            <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+              <option value="Morning (09:00 AM - 01:00 PM)">Morning (09:00 AM - 01:00 PM)</option>
+              <option value="Afternoon (02:00 PM - 05:00 PM)">Afternoon (02:00 PM - 05:00 PM)</option>
+              <option value="Evening (05:30 PM - 09:00 PM)">Evening (05:30 PM - 09:00 PM)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Patient Full Name *</label>
+            <input type="text" id="patientName" placeholder="e.g. Md. Ariful Islam" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block font-semibold text-slate-700 mb-1">Phone Number *</label>
+            <input type="tel" id="patientPhone" placeholder="017XXXXXXXX" pattern="^(?:\+?88)?01[3-9]\d{8}$" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+          </div>
+        </div>
+
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Symptoms or Special Notes (Optional)</label>
+          <textarea rows="2" placeholder="Describe symptoms (e.g. watering eye, blurred vision, cataract consultation)..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none resize-none"></textarea>
+        </div>
+
+        <div class="pt-2">
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-tealAccent-600 hover:from-brand-700 hover:to-tealAccent-500 font-bold text-white shadow-lg transition flex items-center justify-center gap-2 text-sm">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Confirm Appointment Serial</span>
+          </button>
+        </div>
+
+        <p class="text-[11px] text-center text-slate-400">
+          <i class="fa-solid fa-shield-halved text-[10px] mr-1"></i> Encrypted and confidential patient registration.
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden transform transition-all duration-300 translate-y-4 max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex items-start gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="flex-1">
+      <h4 class="font-bold text-xs sm:text-sm text-white" id="toastTitle">Notification</h4>
+      <p class="text-xs text-slate-300 mt-0.5 leading-snug" id="toastMessage">Action completed successfully.</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Hospital,%20I%20want%20information%20about%20hospital%20services" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3.5 shadow-2xl flex items-center gap-2 group transition-all duration-300 transform hover:scale-105" title="WhatsApp Serial">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold">
+      WhatsApp Serial
+    </span>
+  </a>
+
+  <!-- JavaScript Filter & Modal Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('appointmentDate');
+      if (dateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+    });
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      menu.classList.toggle('hidden');
+      if (menu.classList.contains('hidden')) {
+        icon.className = 'fa-solid fa-bars-staggered text-xl';
+      } else {
+        icon.className = 'fa-solid fa-xmark text-xl';
+      }
+    }
+
+    function filterServices() {
+      const query = document.getElementById('serviceSearch').value.toLowerCase();
+      const cards = document.querySelectorAll('.service-card');
+
+      cards.forEach(card => {
+        const keywords = card.getAttribute('data-keywords') || '';
+        const textContent = card.textContent.toLowerCase();
+
+        if (textContent.includes(query) || keywords.includes(query)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openAppointmentModal(defaultDepartment) {
+      const modal = document.getElementById('appointmentModal');
+      const deptSelect = document.getElementById('modalDeptSelect');
+      
+      if (defaultDepartment && deptSelect) {
+        let found = false;
+        for (let i = 0; i < deptSelect.options.length; i++) {
+          if (deptSelect.options[i].text.toLowerCase().includes(defaultDepartment.toLowerCase())) {
+            deptSelect.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          deptSelect.selectedIndex = 0;
+        }
+      }
+      modal.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeAppointmentModal() {
+      const modal = document.getElementById('appointmentModal');
+      modal.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function handleAppointmentSubmit(e) {
+      e.preventDefault();
+      const patientName = document.getElementById('patientName').value || 'Patient';
+      const branch = document.getElementById('modalBranchSelect').value;
+
+      closeAppointmentModal();
+      document.getElementById('appointmentForm').reset();
+      showToast('Appointment Serial Requested!', `Thank you ${patientName}. Our representative will contact you within 15 minutes for ${branch}.`);
+    }
+
+    let toastTimer = null;
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+
+      toast.classList.remove('hidden');
+      toast.classList.remove('translate-y-4');
+
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        hideToast();
+      }, 6000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.add('translate-y-4');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 200);
+    }
+  </script>
+</body>
+</html>
