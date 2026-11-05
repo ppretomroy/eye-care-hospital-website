@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate & Save Sight | Chokher Alo Foundation</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tailwind Configuration matching index.html -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            tealAccent: {
+              500: '#14b8a6',
+              600: '#0d9488',
+            }
+          },
+          boxShadow: {
+            'glow': '0 10px 30px -10px rgba(14, 165, 233, 0.35)',
+            'card': '0 4px 25px -4px rgba(15, 23, 42, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .custom-scrollbar::-webkit-scrollbar {
+      height: 8px;
+      width: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #0284c7;
+      border-radius: 4px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0369a1;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .animate-float {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 bg-slate-50 antialiased overflow-x-hidden custom-scrollbar">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-slate-900 text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center text-teal-400 font-medium">
+          <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse mr-2"></span>
+          Global Vision Relief Fund • Tax-Deductible Non-Profit Partner
+        </span>
+        <span class="hidden md:inline text-slate-500">|</span>
+        <span class="hidden md:inline text-slate-300"><i class="fa-solid fa-location-dot text-brand-400 mr-1.5"></i>Selim Shopping Center (2nd Floor), Bangla School Mor, Sadar Road, Bhola</span>
+      </div>
+      <div class="flex items-center space-x-5">
+        <a href="tel:01981369393" class="hover:text-white transition flex items-center font-semibold text-slate-200">
+          <i class="fa-solid fa-phone-volume text-brand-400 mr-1.5 text-xs"></i> 01981-369393
+        </a>
+        <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 text-emerald-400 transition flex items-center font-semibold text-xs">
+          <i class="fa-brands fa-whatsapp mr-1 text-sm"></i> WhatsApp Support
+        </a>
+        <div class="hidden sm:flex items-center space-x-2 text-slate-400">
+          <span class="text-xs bg-slate-800 px-2 py-0.5 rounded text-teal-300 font-mono">DGHS Reg: 14892 • USD Donor Gateway</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm transition-all duration-300" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Hospital Brand Logo -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-14 h-12 flex items-center justify-center transition group-hover:scale-105">
+            <svg viewBox="0 0 280 180" class="w-full h-full drop-shadow-sm" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#64748B"/>
+              <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#18181B"/>
+              <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#18181B"/>
+              <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+              <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+              <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center flex-wrap gap-1.5">
+              <span class="font-extrabold text-xl sm:text-2xl tracking-tight text-slate-900 leading-tight">Chokher Alo</span>
+              <span class="text-brand-500 font-bold text-xl leading-none">•</span>
+            </div>
+            <p class="text-[11px] sm:text-xs text-slate-600 font-semibold tracking-wide">Vision Relief & Blindness Foundation</p>
+          </div>
+        </a>
+
+        <!-- Navigation Links -->
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
+          <a href="index.html" class="hover:text-brand-600 transition py-2">Home</a>
+          <a href="about.html" class="hover:text-brand-600 transition py-2">About</a>
+          <a href="free-camp.html" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
+            <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
+           Free Camp
+          </a>
+          <a href="services.html" class="hover:text-brand-600 transition py-2">Services</a>
+          <a href="contact.html" class="hover:text-brand-600 transition py-2">Contact</a>
+          <a href="donation.html" class="hover:text-brand-600 transition py-2">Donate</a>
+        </nav>
+
+        <!-- CTA Action -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <a href="#donate-tiers" class="relative inline-flex items-center justify-center px-6 py-2.5 rounded-xl font-bold text-sm text-white bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-700 hover:to-tealAccent-500 shadow-md shadow-emerald-500/20 hover:shadow-glow transition-all duration-200 transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-heart mr-2 text-rose-300"></i> Donate Now ($)
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex lg:hidden items-center space-x-2">
+          <a href="#donate-tiers" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-600 text-white sm:hidden">
+            Donate ($)
+          </a>
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Navigation">
+            <i class="fa-solid fa-bars-staggered text-xl" id="menuIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 transition-all">
+      <div class="flex flex-col space-y-4 font-semibold text-slate-700">
+        <a href="index.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Hospital Home</a>
+        <a href="free-camp.html" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Free Eye Camps</a>
+        <a href="#impact-gallery" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Photo & Video Gallery</a>
+        <a href="#financial-transparency" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Where Funds Go</a>
+        <a href="#donate-tiers" onclick="toggleMobileMenu()" class="text-emerald-700 font-bold py-1">Donate ($ USD)</a>
+        <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
+          <a href="#donate-tiers" onclick="toggleMobileMenu()" class="w-full py-3 text-center rounded-xl font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-md">
+            <i class="fa-solid fa-hand-holding-heart mr-2"></i> Donate Now in USD
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 text-white pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-emerald-500/15 blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 rounded-full bg-brand-500/15 blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text -->
+        <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-semibold tracking-wide">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            SIGHT SAVING MISSION • 100% DIRECT CHARITY IMPACT
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.18]">
+            Just <span class="text-emerald-400 font-black">$150</span> Can Restore Vision <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-brand-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">For a Permanently Blind Patient</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            Millions in rural Bangladesh suffer from reversible cataract blindness simply because they cannot afford a basic microsurgery. Your contribution funds foldable artificial lenses, surgeon kits, medications, and free post-operative care.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#donate-tiers" class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-white bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-500 hover:to-tealAccent-500 shadow-xl shadow-emerald-600/20 transition flex items-center justify-center gap-3">
+              <i class="fa-solid fa-heart text-rose-300 text-lg"></i>
+              <span>Give Vision Today ($ USD)</span>
+            </a>
+            <a href="#impact-gallery" class="w-full sm:w-auto px-7 py-4 rounded-xl font-semibold text-slate-200 bg-slate-800/90 hover:bg-slate-700 border border-slate-700 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-photo-film text-teal-400"></i>
+              <span>Explore Photo & Video Gallery</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges -->
+          <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-emerald-400">$150 USD</p>
+              <p class="text-xs text-slate-400 font-medium">Full Phaco Cataract Surgery</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-white">4,890+</p>
+              <p class="text-xs text-slate-400 font-medium">Free Surgeries Completed</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-extrabold text-teal-300">100%</p>
+              <p class="text-xs text-slate-400 font-medium">Transparent Proof Provided</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live Campaign Goal Card ($ USD) -->
+        <div class="lg:col-span-5 relative">
+          <div class="bg-slate-900 border-2 border-emerald-500/40 rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden backdrop-blur-md">
+            <div class="absolute -right-12 -top-12 w-32 h-32 bg-emerald-500/10 rounded-full blur-xl"></div>
+            
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+              <div>
+                <span class="text-[11px] uppercase tracking-widest font-extrabold text-emerald-400">2026 Annual Campaign</span>
+                <h3 class="text-xl font-black text-white">Global Vision Fund Target</h3>
+              </div>
+              <span class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-3 py-1 rounded-full font-bold animate-pulse">
+                Live Status
+              </span>
+            </div>
+
+            <!-- Numbers in USD -->
+            <div class="space-y-4">
+              <div class="flex justify-between items-baseline">
+                <div>
+                  <p class="text-xs text-slate-400">Funds Raised So Far</p>
+                  <p class="text-3xl font-black text-emerald-400">$ 184,500 <span class="text-xs text-slate-400 font-normal">USD</span></p>
+                </div>
+                <div class="text-right">
+                  <p class="text-xs text-slate-400">Campaign Target</p>
+                  <p class="text-xl font-bold text-slate-300">$ 250,000 <span class="text-xs text-slate-400 font-normal">USD</span></p>
+                </div>
+              </div>
+
+              <!-- Progress Bar -->
+              <div>
+                <div class="w-full bg-slate-800 rounded-full h-4 overflow-hidden p-0.5 border border-slate-700">
+                  <div class="bg-gradient-to-r from-brand-500 via-teal-400 to-emerald-400 h-full rounded-full transition-all duration-1000" style="width: 74%;"></div>
+                </div>
+                <div class="flex justify-between items-center text-xs text-slate-400 mt-2 font-medium">
+                  <span class="text-emerald-400 font-bold">74% Target Reached</span>
+                  <span>1,230 / 1,600 Blind Patients Restored</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Metrics -->
+            <div class="grid grid-cols-2 gap-3 my-6 pt-4 border-t border-slate-800">
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <p class="text-lg font-black text-white">$150 USD</p>
+                <p class="text-[11px] text-slate-400">Sponsors 1 Cataract Eye</p>
+              </div>
+              <div class="bg-slate-800/60 p-3 rounded-xl border border-slate-700/60 text-center">
+                <p class="text-lg font-black text-teal-300">$750 USD</p>
+                <p class="text-[11px] text-slate-400">Sponsors 5 Blind Elders</p>
+              </div>
+            </div>
+
+            <a href="#donate-tiers" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-tealAccent-500 hover:from-emerald-600 hover:to-tealAccent-600 text-slate-950 font-black text-xs uppercase tracking-wider transition shadow-lg flex items-center justify-center gap-2">
+              <i class="fa-solid fa-heart"></i>
+              <span>Donate Now in USD ($)</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video & Photo Proof Wall (Rich Media Showcase) -->
+  <section id="impact-gallery" class="py-24 bg-slate-950 text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-teal-400 bg-teal-950/80 border border-teal-500/30 px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+          <i class="fa-solid fa-photo-film text-rose-500"></i> Video & Photo Documentation Wall
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight">
+          See Your Support Changing Lives
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          Explore full transparency with live surgery videos, patient bandage removal stories, and field photos from our free relief camps across Bangladesh.
+        </p>
+      </div>
+
+      <!-- Video Wall Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        
+        <!-- Video Card 1 -->
+        <div class="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl hover:border-emerald-500/60 transition group flex flex-col justify-between">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/n_3cG9oeuNo?rel=0&modestbranding=1" 
+                title="Phaco Cataract Surgery Demo" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 px-2.5 py-0.5 rounded border border-emerald-500/30">
+                1. Sutureless Phaco Surgery
+              </span>
+              <h3 class="font-bold text-base text-white mt-2.5 group-hover:text-emerald-400 transition leading-snug">
+                15-Minute Sutureless Phaco Cataract Procedure
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                Watch how surgeons implant foldable acrylic intraocular lenses into elderly eyes with zero stitches or pain.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs text-emerald-400 font-semibold">
+            <span><i class="fa-solid fa-shield-halved mr-1"></i> Centurion Technology</span>
+            <span class="text-slate-400 text-[11px]">$150 Sponsored</span>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl hover:border-brand-500/60 transition group flex flex-col justify-between">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/epBnCh549Ls?rel=0&modestbranding=1" 
+                title="Rural Eye Relief Outreach" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-brand-500/20 text-brand-300 px-2.5 py-0.5 rounded border border-brand-500/30">
+                2. Rural Island Camps
+              </span>
+              <h3 class="font-bold text-base text-white mt-2.5 group-hover:text-brand-400 transition leading-snug">
+                Bhola & Coastal River Island Free Eye Camp
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                Over 1,200 villagers screened for eye diseases, receiving free medicine kits, reading glasses, and surgery dates.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs text-brand-400 font-semibold">
+            <span><i class="fa-solid fa-users mr-1"></i> 1,200+ Screenings</span>
+            <span class="text-slate-400 text-[11px]">Island Outreach</span>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl hover:border-amber-500/60 transition group flex flex-col justify-between">
+          <div>
+            <div class="relative aspect-video bg-black overflow-hidden">
+              <iframe 
+                class="w-full h-full" 
+                src="https://www.youtube-nocookie.com/embed/ojDlI4tOKvU?rel=0&modestbranding=1" 
+                title="Bandage Removal Day" 
+                frameborder="0" 
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="p-6">
+              <span class="text-[10px] font-extrabold uppercase tracking-wider bg-amber-500/20 text-amber-300 px-2.5 py-0.5 rounded border border-amber-500/30">
+                3. Unveiling Vision
+              </span>
+              <h3 class="font-bold text-base text-white mt-2.5 group-hover:text-amber-400 transition leading-snug">
+                Bandage Removal Day: Emotional Vision Restoration
+              </h3>
+              <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                The heartwarming moment when surgical eye bandages are removed and grandfathers see their grandchildren clearly.
+              </p>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs text-amber-400 font-semibold">
+            <span><i class="fa-solid fa-heart mr-1"></i> 100% Sight Restored</span>
+            <span class="text-slate-400 text-[11px]">Free Post-Op</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Photo Gallery Sub-Section -->
+      <div class="mt-16">
+        <div class="flex flex-col sm:flex-row items-center justify-between mb-8 pb-4 border-b border-slate-800">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-emerald-400">Field Photography</span>
+            <h3 class="text-2xl font-extrabold text-white mt-1">Impact Image Gallery</h3>
+          </div>
+          <p class="text-slate-400 text-xs mt-2 sm:mt-0">Click any photo to view in high resolution</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <!-- Image 1 -->
+          <div onclick="openLightbox('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80', 'Advanced Microsurgical Suite for Free Cataract Surgeries')" class="relative group aspect-square rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=500&q=80" alt="Surgical OT Room" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end">
+              <span class="text-xs font-bold text-white">Surgical OT Unit</span>
+              <span class="text-[10px] text-emerald-400">Sterile Operating Theater</span>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div onclick="openLightbox('https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=1000&q=80', 'Rural Village OPD Screening Camp in Progress')" class="relative group aspect-square rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=500&q=80" alt="Rural OPD Screening" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end">
+              <span class="text-xs font-bold text-white">Rural OPD Camp</span>
+              <span class="text-[10px] text-teal-300">Bhola Island Screening</span>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div onclick="openLightbox('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1000&q=80', 'Patient Abdul, 68 yrs - Sight Restored after 2 Years of Blindness')" class="relative group aspect-square rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Patient Abdul" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end">
+              <span class="text-xs font-bold text-white">Abdul, 68 yrs</span>
+              <span class="text-[10px] text-amber-300">Sight Restored ($150 Donor)</span>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div onclick="openLightbox('https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&q=80', 'Free Distribution of Prescription Spectacles to Elderly Villagers')" class="relative group aspect-square rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=500&q=80" alt="Free Glasses Distribution" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/20 to-transparent opacity-0 group-hover:opacity-100 transition p-4 flex flex-col justify-end">
+              <span class="text-xs font-bold text-white">Free Spectacles</span>
+              <span class="text-[10px] text-emerald-400">24,000+ Specs Distributed</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- How Funds Are Used (Financial Breakdown) -->
+  <section id="financial-transparency" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full">100% Financial Transparency</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">How Your Donations Are Allocated</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          We ensure every dollar contributed goes directly to medical consumables, surgeon fees, and free patient relief.
+        </p>
+      </div>
+
+      <!-- Expense Allocation Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 hover:border-emerald-500 transition shadow-sm">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl font-bold mb-4">
+            70%
+          </div>
+          <h3 class="font-extrabold text-lg text-slate-900">Surgical Supplies & IOL Lenses</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+            Covers American Alcon/German Carl Zeiss hydrophobic foldable intraocular lenses, surgical viscoelastics, micro-blades, and sterile OT gear.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 hover:border-brand-500 transition shadow-sm">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl font-bold mb-4">
+            15%
+          </div>
+          <h3 class="font-extrabold text-lg text-slate-900">Free Medicines & Glasses</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+            Provides post-operative antibiotic drops, anti-inflammatory medications, protective dark glasses, and free reading spectacles for patients.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 hover:border-teal-500 transition shadow-sm">
+          <div class="w-12 h-12 rounded-2xl bg-teal-100 text-teal-700 flex items-center justify-center text-xl font-bold mb-4">
+            10%
+          </div>
+          <h3 class="font-extrabold text-lg text-slate-900">Rural Patient Logistics</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+            Funds transport ambulances to move elderly patients safely from remote river islands (Chars) to hospital OT centers and back home.
+          </p>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200/80 hover:border-amber-500 transition shadow-sm">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-xl font-bold mb-4">
+            5%
+          </div>
+          <h3 class="font-extrabold text-lg text-slate-900">Follow-up & Monitoring</h3>
+          <p class="text-slate-600 text-xs mt-2 leading-relaxed">
+            Covers 1st week, 1st month, and 3rd month post-op checkups to guarantee 100% infection-free recovery and vision restoration.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Cost per Item Table -->
+      <div class="mt-12 bg-slate-900 text-white rounded-3xl p-8 border border-slate-800">
+        <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+          <i class="fa-solid fa-calculator text-emerald-400"></i> Unit Cost Breakdown ($ USD)
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-xs">
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+            <span class="text-slate-400 block">Prescription Specs</span>
+            <span class="text-emerald-400 font-extrabold text-lg">$10 USD</span>
+            <span class="text-slate-300 block mt-1">Free custom glasses per patient</span>
+          </div>
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+            <span class="text-slate-400 block">Post-Op Drop Kit</span>
+            <span class="text-emerald-400 font-extrabold text-lg">$15 USD</span>
+            <span class="text-slate-300 block mt-1">1 month course of sterile eye drops</span>
+          </div>
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+            <span class="text-slate-400 block">Full Phaco Cataract Kit</span>
+            <span class="text-emerald-400 font-extrabold text-lg">$150 USD</span>
+            <span class="text-slate-300 block mt-1">Complete sutureless surgery & lens</span>
+          </div>
+          <div class="p-4 bg-slate-800/80 rounded-2xl border border-slate-700">
+            <span class="text-slate-400 block">Mobile Camp Outreach</span>
+            <span class="text-emerald-400 font-extrabold text-lg">$3,000 USD</span>
+            <span class="text-slate-300 block mt-1">Screens 500+ patients & 20 surgeries</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Donation Tiers ($ USD Currency Standard) -->
+  <section id="donate-tiers" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+          <i class="fa-solid fa-heart text-rose-500"></i> International Donation Gateway ($ USD)
+        </span>
+        <h2 class="text-3xl sm:text-5xl font-black text-slate-900 mt-4 tracking-tight">
+          Select Your Sponsorship Level
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-3">
+          Every contribution is processed with 100% transparency. Donors receive a video confirmation report of their sponsored patient.
+        </p>
+      </div>
+
+      <!-- Donation Cards Grid ($ USD) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Tier 1: Single Patient -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Single Vision Sponsor</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">1 Free Phaco Surgery</h3>
+            <p class="text-xs text-slate-500 mt-2">Completely covers 1 elderly patient's sutureless Phaco surgery, foldable IOL lens, medications, and transport.</p>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-emerald-600">$ 150</span>
+              <span class="text-slate-500 text-xs">/ USD</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Hydrophobic Foldable IOL Lens</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Free eye drops & post-op medicines</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Video & Photo update sent to donor</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('1 Free Phaco Surgery ($150 USD)', 150)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs transition shadow-md">
+            Sponsor 1 Surgery ($150)
+          </button>
+        </div>
+
+        <!-- Tier 2: 5 Surgeries (Most Chosen) -->
+        <div class="bg-gradient-to-b from-brand-900 to-slate-900 text-white rounded-3xl p-8 border-2 border-tealAccent-500 relative flex flex-col justify-between shadow-2xl">
+          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-950 text-[10px] font-black uppercase px-3.5 py-1 rounded-full">
+            Most Chosen Impact
+          </div>
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-teal-300">Family & Community Sponsor</span>
+            <h3 class="text-2xl font-black text-white mt-2">5 Free Phaco Surgeries</h3>
+            <p class="text-xs text-slate-300 mt-2">Restores vision for 5 blind grandfathers and grandmothers in underprivileged rural areas.</p>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-teal-300">$ 750</span>
+              <span class="text-slate-400 text-xs">/ USD</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-200">
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 5 Sutureless Cataract Microsurgeries</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Certificate of Appreciation</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Personal video reports from beneficiaries</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Tax receipt issued upon request</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('5 Free Phaco Surgeries ($750 USD)', 750)" class="mt-8 w-full py-3.5 rounded-xl bg-tealAccent-500 hover:bg-tealAccent-600 text-slate-950 font-black text-xs transition shadow-lg">
+            Sponsor 5 Surgeries ($750)
+          </button>
+        </div>
+
+        <!-- Tier 3: Full Camp Sponsor -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-200 flex flex-col justify-between hover:border-emerald-500 transition shadow-sm">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Corporate & Foundation Sponsor</span>
+            <h3 class="text-2xl font-black text-slate-900 mt-2">Sponsor Entire Eye Camp</h3>
+            <p class="text-xs text-slate-500 mt-2">Funds an entire rural eye camp screening 500+ villagers and performing 20 free Phaco surgeries.</p>
+            <div class="my-6">
+              <span class="text-4xl font-extrabold text-emerald-600">$ 3,000</span>
+              <span class="text-slate-500 text-xs">/ USD</span>
+            </div>
+            <ul class="space-y-2.5 text-xs text-slate-700">
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 500+ Free Eye Examinations & Specs</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 20 Sutureless Phaco Surgeries</li>
+              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Camp dedicated in memory or honor of donor</li>
+            </ul>
+          </div>
+          <button onclick="openDonationModal('Entire Free Eye Camp Sponsor ($3,000 USD)', 3000)" class="mt-8 w-full py-3.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-white font-bold text-xs transition shadow-md">
+            Sponsor Full Camp ($3,000)
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Direct International Wire Transfer Account -->
+      <div class="mt-12 bg-slate-900 text-white p-8 rounded-3xl border border-slate-800 flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center lg:text-left">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Direct International Wire Transfer Account</span>
+          <h4 class="text-xl font-bold text-white">Official USD Bank Wire Details</h4>
+          <p class="text-xs text-slate-300">Bank Name: <span class="font-semibold text-white">Islami Bank Bangladesh Ltd</span></p>
+          <p class="text-xs text-slate-300">Account Name: <span class="font-mono text-teal-300 font-bold text-sm">Chokher Alo Foundation</span></p>
+          <p class="text-xs text-slate-300">SWIFT Code: <span class="font-mono text-emerald-400 font-bold text-sm">IBBLBDDHXXX</span> | Account No: <span class="font-mono text-teal-300 font-bold text-sm">2050XXXXXXXXX</span></p>
+          <p class="text-xs text-slate-400">Branch Address: Bhola Branch, Sadar Road, Bhola, Bangladesh</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="openDonationModal('Custom USD Donation', 0)" class="px-6 py-3.5 bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-500 hover:to-tealAccent-500 text-white font-extrabold text-xs rounded-xl shadow transition">
+            Enter Custom USD Amount
+          </button>
+        </div>
+      </div>
+
+      <!-- Dedicated Hospital Contact Details for Donors -->
+      <div class="mt-8 bg-slate-50 border border-slate-200/90 rounded-3xl p-8 shadow-sm">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+          
+          <div class="space-y-3 max-w-2xl">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/80 px-3.5 py-1 rounded-full inline-block">
+              <i class="fa-solid fa-headset mr-1"></i> Direct Donor Relations Desk
+            </span>
+            <h3 class="text-2xl font-extrabold text-slate-900 tracking-tight">Need Assistance or Customized Sponsorship?</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              If you wish to make a corporate donation, request official tax receipts, dedicate a free eye camp in memory of a loved one, or verify bank transfers, please reach out to our Foundation Officers directly.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 text-xs sm:text-sm text-slate-800">
+              <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-base shrink-0">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-semibold">Donor Helpline</span>
+                  <a href="tel:01981369393" class="font-extrabold text-slate-900 hover:text-emerald-600 transition">+880 1981-369393</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-700 flex items-center justify-center text-base shrink-0">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-semibold">WhatsApp Donor Desk</span>
+                  <a href="https://wa.me/8801711000000" target="_blank" rel="noopener noreferrer" class="font-extrabold text-slate-900 hover:text-emerald-600 transition">+880 1711-000000</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center text-base shrink-0">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-semibold">Official Donor Email</span>
+                  <a href="mailto:donate@chokheralo.org" class="font-extrabold text-slate-900 hover:text-brand-600 transition">donate@chokheralo.org</a>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-base shrink-0">
+                  <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <div>
+                  <span class="text-[11px] text-slate-400 block font-semibold">Foundation Office</span>
+                  <span class="font-bold text-slate-800 text-xs">Selim Center (2nd Floor), Sadar Rd, Bhola</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Interactive Contact Box -->
+          <div class="w-full lg:w-80 bg-white p-6 rounded-2xl border border-slate-200 shadow-md text-center space-y-4 shrink-0">
+            <div class="w-12 h-12 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl mx-auto">
+              <i class="fa-solid fa-comments"></i>
+            </div>
+            <div>
+              <h4 class="font-extrabold text-slate-900 text-sm">Direct Representative Contact</h4>
+              <p class="text-slate-500 text-xs mt-1">Chat live on WhatsApp or submit a callback request.</p>
+            </div>
+            <div class="flex flex-col gap-2">
+              <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Foundation,%20I%20want%20to%20inquire%20about%20making%20a%20donation" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Donor Desk
+              </a>
+              <button onclick="openDonationModal('Custom Sponsorship Inquiry', 0)" class="w-full py-2.5 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-semibold text-xs transition">
+                Request Official Receipt / Call
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-2xl p-3 hover:text-emerald-400 transition">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="max-w-4xl w-full text-center space-y-4">
+      <img id="lightboxImage" src="" alt="High resolution impact image" class="max-h-[75vh] mx-auto rounded-2xl shadow-2xl border border-slate-700 object-contain">
+      <p id="lightboxCaption" class="text-slate-300 text-sm font-semibold"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-16 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        
+        <!-- Col 1: About -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center space-x-3 text-white">
+            <div class="w-12 h-10 flex items-center justify-center">
+              <svg viewBox="0 0 280 180" class="w-full h-full" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M190 76C208 82 228 95 244 110C226 126 200 134 185 137C198 123 205 102 190 76Z" fill="#94A3B8"/>
+                <path d="M12 114C55 86 112 52 188 56C224 58 255 76 270 94C244 80 216 70 180 68C120 65 68 94 12 114Z" fill="#F8FAFC"/>
+                <path d="M12 114C45 142 85 174 168 166C150 162 128 152 116 142C92 144 76 138 68 132C52 124 35 118 12 114Z" fill="#F8FAFC"/>
+                <circle cx="150" cy="106" r="48" fill="#00A2FF"/>
+                <circle cx="151" cy="107" r="22" fill="#0B0F19"/>
+                <path d="M142 97C146 95 147 98 145 103C143 108 138 108 137 104C137 100 139 98 142 97Z" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <div>
+              <span class="text-base font-extrabold tracking-tight block text-white">CHOKHER ALO</span>
+              <span class="text-[10px] text-slate-400">Global Vision Relief Foundation</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            Chokher Alo Foundation is a registered non-profit organization dedicated to eradicating preventable cataract blindness in Bangladesh.
+          </p>
+          <div class="flex space-x-3 pt-2">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-brand-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/8801711000000" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-emerald-600 hover:text-white flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Donation Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#financial-transparency" class="hover:text-white transition">Where Funds Go</a></li>
+            <li><a href="#impact-gallery" class="hover:text-white transition">Live Video Proofs</a></li>
+            <li><a href="#donate-tiers" class="hover:text-white transition">USD Donation Tiers</a></li>
+            <li><a href="free-camp.html" class="hover:text-white transition">Free Eye Camps</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Hospital Main</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-white transition">Hospital Main Site</a></li>
+            <li><a href="index.html#specialists" class="hover:text-white transition">Senior Doctors Panel</a></li>
+            <li><a href="index.html#vision-mission" class="hover:text-white transition">Vision & Core Values</a></li>
+            <li><a href="index.html#contact" class="hover:text-white transition">Hospital Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white text-sm uppercase tracking-wider">Donor Desk</h4>
+          <div class="bg-slate-900 p-4 rounded-xl border border-slate-800">
+            <p class="text-[11px] text-emerald-400 font-bold mb-1"><i class="fa-solid fa-heart mr-1"></i> Foundation Representative</p>
+            <p class="text-white font-mono text-sm font-bold">+880 1981-369393</p>
+            <p class="text-slate-300 text-xs mt-1">WhatsApp: +8801711000000</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-12 pt-8 border-t border-slate-900 flex flex-col sm:flex-row justify-between items-center text-slate-400 text-xs">
+        <p>&copy; 2026 Chokher Alo Vision Relief Foundation. All rights reserved.</p>
+        <p class="mt-3 sm:mt-0 text-[11px]">Licensed Ophthalmic Foundation • Non-Profit Entity</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- USD Donation Modal -->
+  <div id="donationModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+      <button onclick="closeDonationModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-2 rounded-full hover:bg-slate-100 transition">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl mb-4">
+        <i class="fa-solid fa-heart-pulse"></i>
+      </div>
+      <h3 class="font-extrabold text-xl text-slate-900" id="modalTierTitle">Sponsor Vision</h3>
+      <p class="text-xs text-slate-500 mt-1 mb-4">Please enter your details to pledge a USD contribution and receive official video updates.</p>
+
+      <form onsubmit="handleDonationSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Donation Amount ($ USD) *</label>
+          <input type="number" id="modalAmountInput" required placeholder="e.g. 150" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 font-bold text-emerald-700 text-base focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Donor Full Name *</label>
+          <input type="text" required placeholder="e.g. Dr. Tanvir Rahman" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Email / WhatsApp Number *</label>
+          <input type="text" required placeholder="donor@example.com or WhatsApp number" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Payment Method *</label>
+          <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none">
+            <option value="International Wire Transfer">International Bank Wire Transfer (SWIFT)</option>
+            <option value="Direct Credit Card">Credit / Debit Card (USD)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-tealAccent-600 hover:from-emerald-700 hover:to-tealAccent-500 font-extrabold text-white text-xs shadow-lg transition">
+          Confirm USD Donation Pledge
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden max-w-sm bg-slate-900 text-white p-4 rounded-2xl shadow-2xl border border-slate-700 flex items-start gap-3">
+    <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+      <i class="fa-solid fa-circle-check"></i>
+    </div>
+    <div class="flex-1">
+      <h4 class="font-bold text-xs sm:text-sm text-white" id="toastTitle">Notification</h4>
+      <p class="text-xs text-slate-300 mt-0.5" id="toastMessage">Action completed.</p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/8801711000000?text=Hello%20Chokher%20Alo%20Foundation,%20I%20want%20to%20donate%20in%20USD%20to%20sponsor%20cataract%20surgeries" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-3.5 shadow-2xl flex items-center gap-2 group transition-all duration-300 transform hover:scale-105" title="WhatsApp Serial">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 ease-in-out whitespace-nowrap text-xs font-bold">
+      WhatsApp Donor Desk
+    </span>
+  </a>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const icon = document.getElementById('menuIcon');
+      menu.classList.toggle('hidden');
+      if (menu.classList.contains('hidden')) {
+        icon.className = 'fa-solid fa-bars-staggered text-xl';
+      } else {
+        icon.className = 'fa-solid fa-xmark text-xl';
+      }
+    }
+
+    function openDonationModal(title, amount) {
+      document.getElementById('modalTierTitle').textContent = title;
+      const input = document.getElementById('modalAmountInput');
+      input.value = amount > 0 ? amount : '';
+      document.getElementById('donationModal').classList.remove('hidden');
+    }
+
+    function closeDonationModal() {
+      document.getElementById('donationModal').classList.add('hidden');
+    }
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightboxImage').src = src;
+      document.getElementById('lightboxCaption').textContent = caption;
+      document.getElementById('lightboxModal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function handleDonationSubmit(e) {
+      e.preventDefault();
+      closeDonationModal();
+      showToast('Thank You Dear Donor!', 'Your USD pledge has been recorded. Our foundation desk will send wire instructions and tax receipt details.');
+    }
+
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = message;
+      toast.classList.remove('hidden');
+      setTimeout(() => { toast.classList.add('hidden'); }, 5000);
+    }
+  </script>
+</body>
+</html>
