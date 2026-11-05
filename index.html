@@ -131,13 +131,13 @@
         <nav class="hidden lg:flex items-center space-x-7 text-sm font-semibold text-slate-700">
           <a href="index.html" class="hover:text-brand-600 transition py-2">Home</a>
           <a href="about.html" class="hover:text-brand-600 transition py-2">About</a>
-                    <a href="#vision-checker" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
+          <a href="free-camp.html" class="text-teal-700 hover:text-teal-800 transition py-2 flex items-center gap-1">
             <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
-           Free Champ
+           Free Camp
           </a>
-          <a href="#specialists" class="hover:text-brand-600 transition py-2">Services</a>
-          <a href="#contact" class="hover:text-brand-600 transition py-2">Contact</a>
-          <a href="#pricing" class="hover:text-brand-600 transition py-2">Donation</a>
+          <a href="services.html" class="hover:text-brand-600 transition py-2">Services</a>
+          <a href="contact.html" class="hover:text-brand-600 transition py-2">Contact</a>
+          <a href="donation.html" class="hover:text-brand-600 transition py-2">Donate</a>
         </nav>
 
         <!-- CTA & Fast Actions -->
@@ -162,11 +162,9 @@
     <!-- Mobile Navigation Drawer -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-5 transition-all">
       <div class="flex flex-col space-y-4 font-semibold text-slate-700">
-        <a href="#services" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Services & Specialties</a>
-        <a href="#lasik-cataract" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Phaco & SMILE Laser</a>
+        <a href="#specialists" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Services & Specialties</a>
         <a href="#specialists" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Eye Specialists</a>
-        <a href="#pricing" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Packages & Cost Guide</a>
-        <a href="#vision-checker" onclick="toggleMobileMenu()" class="text-teal-700 hover:text-teal-800 py-1 font-bold">Online Vision Check</a>
+        <a href="#vision-mission" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Vision, Mission & Values</a>
         <a href="#contact" onclick="toggleMobileMenu()" class="hover:text-brand-600 py-1">Locations & Branches</a>
         <div class="pt-4 border-t border-slate-100 flex flex-col gap-3">
           <button onclick="openAppointmentModal(); toggleMobileMenu();" class="w-full py-3 text-center rounded-xl font-semibold text-white bg-brand-600 hover:bg-brand-700 shadow-md">
@@ -347,15 +345,14 @@
             <div class="p-6">
               <h3 class="font-bold text-lg text-slate-900">Dr. Md. Shakib Hossain</h3>
               <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Surgeon MBBS, MPH (Epidemiology) CCD, PGT (Ophthalmology)</p>
-              <p class="text-slate-500 text-xs mt-2">National Institute of Ophthalmology & Hospital
-Sher-e-Bangla Nagar, Dhaka.</p>
+              <p class="text-slate-500 text-xs mt-2">National Institute of Ophthalmology & Hospital Sher-e-Bangla Nagar, Dhaka.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
                 Fee: ৳200 (Bhola, Sadar)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Prof. Dr. Tariqul Islam - Cornea & LASIK')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Md. Shakib Hossain - Cornea & LASIK')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
@@ -367,7 +364,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/BbP8SPN7/76fde162-4920-4372-a95b-b34fb7232b75.jpg" 
-                alt="Dr. Farzana Rahman, Vitreo-Retina Specialist" 
+                alt="Dr. Md. Asaduzzaman" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80'"
               />
@@ -385,7 +382,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Farzana Rahman - Retina Specialist')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Md. Asaduzzaman - Retina Specialist')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
@@ -397,7 +394,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/6QRkQywx/Gemini-Generated-Image-50ea3650ea3650ea.jpg" 
-                alt="Dr. Kazi Shahed Ahmed, Phaco Cataract Surgeon" 
+                alt="Dr. Md. Shahriar Rajon Raju" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80'"
               />
@@ -415,7 +412,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Kazi Shahed Ahmed - Cataract & Phaco')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Md. Shahriar Rajon Raju - Cataract & Phaco')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
@@ -427,7 +424,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/nrMTCP7f/Gemini-Generated-Image-42jmv42jmv42jmv4.jpg" 
-                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                alt="Dr. A.K.M. Shamiul Haque" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
               />
@@ -445,20 +442,19 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. A.K.M. Shamiul Haque - Oculoplasty')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
         </div>
 
-        
-        <!-- Doctor 4: Pediatric & Squint -->
+        <!-- Doctor 5: Eye Specialist -->
         <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/DzBqLc7Q/Gemini-Generated-Image-tscgkytscgkytscg.jpg" 
-                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                alt="Dr. Md. Shamim Hossain" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
               />
@@ -469,27 +465,26 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             <div class="p-6">
               <h3 class="font-bold text-lg text-slate-900">Dr. Md. Shamim Hossain</h3>
               <p class="text-brand-600 font-semibold text-xs">Eye Specialist & Microsurgeon MBBS (Dhaka) DO (BSMMU)</p>
-              <p class="text-slate-500 text-xs mt-2">Eye Specialist & Surgeon atChokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
+              <p class="text-slate-500 text-xs mt-2">Eye Specialist & Surgeon at Chokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
                 Fee: ৳1,000 (Dhanmondi)
               </div>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Md. Shamim Hossain')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
         </div>
 
-        
-        <!-- Doctor 4: Pediatric & Squint -->
+        <!-- Doctor 6: Medical Officer -->
         <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/Kcgbh2D9/2d840bcb-e5b0-46b0-8ac0-129bc7dfd189.jpg" 
-                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                alt="Dr. Alamin" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
               />
@@ -507,19 +502,19 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Alamin')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
         </div>
 
-          <!-- Doctor 4: Pediatric & Squint -->
+        <!-- Doctor 7: Medical Officer -->
         <div class="doctor-card bg-white rounded-3xl overflow-hidden shadow-card border border-slate-200/80 hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-dept="pediatric">
           <div>
             <div class="relative aspect-square overflow-hidden bg-slate-100">
               <img 
                 src="https://i.postimg.cc/C1G4bdVG/500b38a2-8ea7-4ec4-ba54-91ed700c5fd5.jpg" 
-                alt="Dr. Nusrat Jahan, Pediatric Eye Specialist" 
+                alt="Dr. Md. Masud Rana" 
                 class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
                 onerror="this.src='https://images.unsplash.com/photo-1594824813596-f56f1766fa04?auto=format&fit=crop&w=600&q=80'"
               />
@@ -528,7 +523,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
               </span>
             </div>
             <div class="p-6">
-              <h3 class="font-bold text-lg text-slate-900">Dr.Md.Masud  Rana</h3>
+              <h3 class="font-bold text-lg text-slate-900">Dr. Md. Masud Rana</h3>
               <p class="text-brand-600 font-semibold text-xs">Eye Specialist MBBS PGT (Ophthalmology)</p>
               <p class="text-slate-500 text-xs mt-2">Medical Officer Chokher Alo Retina Glaucoma Hospital & Phaco Centre.</p>
               <div class="mt-3 inline-block text-[11px] bg-slate-100 text-slate-700 px-2 py-0.5 rounded font-mono">
@@ -537,103 +532,129 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
           </div>
           <div class="px-6 pb-6 pt-2">
-            <button onclick="openAppointmentModal('Dr. Nusrat Jahan - Pediatric Eye Care')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
+            <button onclick="openAppointmentModal('Dr. Md. Masud Rana')" class="w-full py-2.5 rounded-xl border border-brand-500 text-brand-600 hover:bg-brand-600 hover:text-white text-xs font-bold transition">
               Book Serial
             </button>
           </div>
         </div>
 
-        
-
       </div>
     </div>
   </section>
 
-  <!-- Pricing / Package Cost Guide -->
-  <section id="pricing" class="py-20 bg-white">
+  <!-- Vision, Mission & Core Values Section -->
+  <section id="vision-mission" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
       <div class="text-center max-w-3xl mx-auto mb-16">
-        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3 py-1 rounded-full">Transparent Pricing</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full inline-block">Our Foundation</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3 tracking-tight">
-          Affordable Treatment Packages (৳ BDT)
+          Vision, Mission & Our Core Values
         </h2>
         <p class="text-slate-600 text-sm sm:text-base mt-2">
-          No hidden fees. All-inclusive surgical packages tailored by lens type and laser technique.
+          Guiding principles that power our commitment to restoring vision and eliminating preventable blindness across Bangladesh.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Vision & Mission Side by Side -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         
-        <!-- Package 1 -->
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition">
+        <!-- Our Vision Card -->
+        <div class="bg-gradient-to-br from-brand-900 to-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl border border-slate-800 flex flex-col justify-between relative overflow-hidden group">
+          <div class="absolute -right-8 -bottom-8 w-40 h-40 bg-brand-500/10 rounded-full blur-2xl group-hover:bg-brand-500/20 transition duration-500"></div>
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Standard Package</span>
-            <h3 class="text-2xl font-black text-slate-900 mt-2">Alcon Phaco Cataract Surgery</h3>
-            <p class="text-xs text-slate-500 mt-2">Day-care surgery featuring American Alcon Foldable Monofocal Intraocular Lens (IOL).</p>
-            <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳28,000</span>
-              <span class="text-slate-500 text-xs">/ starting per eye</span>
+            <div class="w-14 h-14 rounded-2xl bg-brand-500/20 border border-brand-400/30 flex items-center justify-center text-brand-400 text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-eye"></i>
             </div>
-            <ul class="space-y-2.5 text-xs text-slate-700">
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Alcon Acrylic Hydrophobic Lens</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Sutureless 2.2mm Micro-incision</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Discharge within 2 hours of procedure</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 1st Post-operative follow-up free</li>
-            </ul>
+            <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Where We Are Headed</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Our Vision</h3>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-4 font-light">
+              To be the most trusted and technologically advanced eye care institution in Bangladesh, recognized internationally for excellence in retina, glaucoma, and refractive microsurgeries while eliminating avoidable blindness across all communities.
+            </p>
           </div>
-          <button onclick="openAppointmentModal('Phaco Cataract Inquiry')" class="mt-8 w-full py-3 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
-            Book Package
-          </button>
+          <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between text-xs text-brand-300 font-semibold">
+            <span><i class="fa-solid fa-circle-check mr-2 text-teal-400"></i>Blindness Prevention</span>
+            <span><i class="fa-solid fa-circle-check mr-2 text-teal-400"></i>World-Class Precision</span>
+          </div>
         </div>
 
-        <!-- Package 2: Most Popular -->
-        <div class="bg-gradient-to-b from-brand-900 to-slate-900 text-white p-8 rounded-3xl border-2 border-tealAccent-500 relative flex flex-col justify-between shadow-2xl">
-          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-teal-400 to-emerald-400 text-slate-900 text-[10px] font-black uppercase px-3 py-1 rounded-full">
-            Most Chosen
-          </div>
+        <!-- Our Mission Card -->
+        <div class="bg-slate-50 rounded-3xl p-8 sm:p-10 shadow-card border border-slate-200/80 flex flex-col justify-between relative overflow-hidden group hover:border-brand-500 transition duration-300">
           <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-teal-300">German Technology</span>
-            <h3 class="text-2xl font-black text-white mt-2">Carl Zeiss SMILE Pro®</h3>
-            <p class="text-xs text-slate-300 mt-2">Bladeless, flapless 10-second laser vision correction for total glass removal.</p>
-            <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-teal-300">৳1,10,000</span>
-              <span class="text-slate-400 text-xs">/ Both Eyes</span>
+            <div class="w-14 h-14 rounded-2xl bg-teal-50 border border-teal-200 flex items-center justify-center text-teal-600 text-2xl mb-6 shadow-sm">
+              <i class="fa-solid fa-bullseye"></i>
             </div>
-            <ul class="space-y-2.5 text-xs text-slate-200">
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 100% Bladeless & Flapless procedure</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Resume normal work within 24 hours</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> 0% EMI available on bKash & Credit Cards</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-teal-400 mr-2"></i> Pre-surgery Corneal Topography included</li>
-            </ul>
+            <span class="text-xs font-bold uppercase tracking-widest text-teal-600">Our Everyday Purpose</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Our Mission</h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mt-4">
+              To provide comprehensive, compassionate, and affordable ophthalmic care using state-of-the-art German and American diagnostic technology. We strive to empower our senior BMDC specialists and medical staff to deliver unmatched clinical outcomes for every patient.
+            </p>
           </div>
-          <button onclick="openAppointmentModal('SMILE Pro Package')" class="mt-8 w-full py-3 rounded-xl bg-tealAccent-500 hover:bg-tealAccent-600 text-slate-950 font-bold text-xs transition shadow-lg">
-            Book LASIK Evaluation Test
-          </button>
-        </div>
-
-        <!-- Package 3 -->
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between hover:border-brand-500 transition">
-          <div>
-            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Premium Vision</span>
-            <h3 class="text-2xl font-black text-slate-900 mt-2">Multifocal Trifocal IOL</h3>
-            <p class="text-xs text-slate-500 mt-2">Clear distance, intermediate, and near vision without reading glasses via Alcon PanOptix or Zeiss Trifocal lenses.</p>
-            <div class="my-6">
-              <span class="text-3xl sm:text-4xl font-extrabold text-brand-600">৳65,000 - ৳95,000</span>
-              <span class="text-slate-500 text-xs">/ per eye</span>
-            </div>
-            <ul class="space-y-2.5 text-xs text-slate-700">
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Complete freedom from reading glasses</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Alcon PanOptix® / Zeiss AT LISA® IOL</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Toric cylinder correction option</li>
-              <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 3 months post-op monitoring included</li>
-            </ul>
+          <div class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between text-xs text-slate-600 font-semibold">
+            <span><i class="fa-solid fa-circle-check mr-2 text-emerald-500"></i>Patient-Centric Care</span>
+            <span><i class="fa-solid fa-circle-check mr-2 text-emerald-500"></i>Advanced Technology</span>
           </div>
-          <button onclick="openAppointmentModal('Premium Trifocal IOL Inquiry')" class="mt-8 w-full py-3 rounded-xl bg-slate-900 hover:bg-brand-600 text-white font-bold text-xs transition">
-            Book Consultation
-          </button>
         </div>
 
       </div>
+
+      <!-- Core Values Header & Grid -->
+      <div class="mt-16">
+        <div class="text-center mb-10">
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Our Core Values</h3>
+          <p class="text-slate-500 text-sm mt-1">The fundamental principles guiding our medical practice and patient relations</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Value 1 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-xl mb-4 group-hover:bg-brand-600 group-hover:text-white transition duration-200">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <h4 class="font-bold text-base text-slate-900 mb-2">Compassion & Empathy</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              We treat every patient like family, prioritizing comfort, clear communication, and personalized care throughout their treatment journey.
+            </p>
+          </div>
+
+          <!-- Value 2 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-4 group-hover:bg-teal-600 group-hover:text-white transition duration-200">
+              <i class="fa-solid fa-microscope"></i>
+            </div>
+            <h4 class="font-bold text-base text-slate-900 mb-2">Clinical Excellence</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Adhering to strict international protocols and continuously updating techniques to maintain our 99.6% clinical accuracy record.
+            </p>
+          </div>
+
+          <!-- Value 3 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-600 group-hover:text-white transition duration-200">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h4 class="font-bold text-base text-slate-900 mb-2">Integrity & Ethics</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Complete transparency in surgical procedures, medical diagnostics, and treatment recommendations with absolute patient confidentiality.
+            </p>
+          </div>
+
+          <!-- Value 4 -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 group">
+            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl mb-4 group-hover:bg-indigo-600 group-hover:text-white transition duration-200">
+              <i class="fa-solid fa-hand-holding-hand"></i>
+            </div>
+            <h4 class="font-bold text-base text-slate-900 mb-2">Accessibility & Equity</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Dedicated to offering affordable, high-quality eye care and community outreach programs for underprivileged communities.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -772,7 +793,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
           </div>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
             <span class="text-[11px] text-teal-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> 100% Bladeless</span>
-            <button onclick="openAppointmentModal('SMILE Pro Package')" class="text-xs font-bold text-brand-400 hover:text-white transition">
+            <button onclick="openAppointmentModal('SMILE Pro Evaluation')" class="text-xs font-bold text-brand-400 hover:text-white transition">
               Book Serial <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
@@ -995,7 +1016,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
           <div class="px-5 pb-5 pt-1 flex items-center justify-between border-t border-slate-700/60">
             <span class="text-[11px] text-cyan-400 font-semibold"><i class="fa-solid fa-circle-check mr-1"></i> Alcon & Zeiss IOLs</span>
             <button onclick="openAppointmentModal('Premium Trifocal IOL Inquiry')" class="text-xs font-bold text-brand-400 hover:text-white transition">
-              View Packages <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
+              Consultation <i class="fa-solid fa-arrow-right text-[10px] ml-1"></i>
             </button>
           </div>
         </div>
@@ -1189,7 +1210,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
 
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
-              "I used heavy glasses for 12 years (-5.50 power). Under Dr. Tariqul's guidance at Chokher Alo, I got Carl Zeiss SMILE Pro laser done. The 10-second procedure freed me from glasses with zero pain. I was back working on my laptop the very next day."
+              "I used heavy glasses for 12 years (-5.50 power). Under the expert guidance at Chokher Alo, I got Carl Zeiss SMILE Pro laser done. The 10-second procedure freed me from glasses with zero pain. I was back working on my laptop the very next day."
             </p>
           </div>
 
@@ -1200,7 +1221,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
               </div>
               <div>
                 <h4 class="font-bold text-slate-900 text-sm">Mahmudul Hasan</h4>
-                <p class="text-[11px] text-slate-500">Software Engineer • Dhanmmonitoring Branch</p>
+                <p class="text-[11px] text-slate-500">Software Engineer • Dhanmondi Branch</p>
               </div>
             </div>
             <span class="text-[10px] bg-slate-100 text-slate-600 font-medium px-2 py-1 rounded-md">SMILE Pro</span>
@@ -1259,7 +1280,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
             </div>
 
             <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
-              "Diabetes caused retinal bleeding and sudden blurred vision. Dr. Farzana's timely OCT scan and green retina laser treatment fully restored my vision. The doctors and nursing staff were exceptionally caring."
+              "Diabetes caused retinal bleeding and sudden blurred vision. The timely OCT scan and green retina laser treatment fully restored my vision. The doctors and nursing staff were exceptionally caring."
             </p>
           </div>
 
@@ -1367,17 +1388,17 @@ Sher-e-Bangla Nagar, Dhaka.</p>
               <div>
                 <label class="block font-semibold text-slate-700 mb-1">Select Branch *</label>
                 <select id="contactBranch" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition font-sans">
-                  <option value="Dhanmondi Main Campus">Dhanmondi Main Campus (Dhaka)</option>
+                  <option value="Bhola Main Campus">Bhola Main Campus</option>
+                  <option value="Dhanmondi Main Campus">Dhanmondi Branch (Dhaka)</option>
                   <option value="Uttara Branch">Uttara Branch (Dhaka)</option>
                   <option value="Banani Branch">Banani Branch (Dhaka)</option>
-                  <option value="Chattogram Center">Chattogram Branch (GEC Circle)</option>
                 </select>
               </div>
               <div>
                 <label class="block font-semibold text-slate-700 mb-1">Subject / Specialty *</label>
                 <select id="contactSubject" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none transition font-sans">
                   <option value="General Consultation & Inquiry">General Consultation & Inquiry</option>
-                  <option value="Phaco Cataract Surgery Package">Phaco Cataract Surgery Package</option>
+                  <option value="Phaco Cataract Surgery Package">Phaco Cataract Surgery</option>
                   <option value="SMILE Pro & LASIK Glass Removal">SMILE Pro & LASIK Glass Removal</option>
                   <option value="Retina & Diabetic Eye Exam">Retina & Diabetic Eye Exam</option>
                   <option value="Glaucoma & Eye Pressure">Glaucoma & Eye Pressure</option>
@@ -1445,11 +1466,9 @@ Sher-e-Bangla Nagar, Dhaka.</p>
         <div class="space-y-3">
           <h4 class="font-bold text-white text-sm uppercase tracking-wider">More Links</h4>
           <ul class="space-y-2">
-            <li><a href="#lasik-cataract" class="hover:text-white transition">Our Departments</a></li>
-            <li><a href="#services" class="hover:text-white transition">Career And Circular</a></li>
-            <li><a href="#services" class="hover:text-white transition">Hospital Gallery</a></li>
-            <li><a href="#services" class="hover:text-white transition">News & Media</a></li>
-            <li><a href="#services" class="hover:text-white transition">Donate Us</a></li>
+
+            <li><a href="career.html" class="hover:text-white transition">Career And Circular</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition">Hospital Gallery</a></li>
           </ul>
         </div>
 
@@ -1459,7 +1478,7 @@ Sher-e-Bangla Nagar, Dhaka.</p>
           <ul class="space-y-2">
             <li><a href="#vision-checker" class="hover:text-white transition">Online Vision Check</a></li>
             <li><a href="#" onclick="openInsuranceModal()" class="hover:text-white transition">Cashless Insurance (TPA)</a></li>
-            <li><a href="#pricing" class="hover:text-white transition">Packages & Fees</a></li>
+            <li><a href="#vision-mission" class="hover:text-white transition">Our Values</a></li>
             <li><a href="#specialists" class="hover:text-white transition">Specialist Doctor Panel</a></li>
             <li><a href="#" onclick="openAppointmentModal()" class="hover:text-white transition">Online Appointment Booking</a></li>
           </ul>
@@ -1509,10 +1528,10 @@ Sher-e-Bangla Nagar, Dhaka.</p>
           <div>
             <label class="block font-semibold text-slate-700 mb-1">Select Branch *</label>
             <select id="modalBranchSelect" required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-3.5 py-2.5 text-slate-800 focus:bg-white focus:ring-2 focus:ring-brand-500 focus:outline-none font-sans">
-              <option value="Dhanmondi Main Branch">Dhanmondi Main Branch (Dhaka)</option>
+              <option value="Bhola Main Branch">Bhola Main Branch</option>
+              <option value="Dhanmondi Main Branch">Dhanmondi Branch (Dhaka)</option>
               <option value="Uttara Sector 7 Branch">Uttara Branch (Dhaka)</option>
               <option value="Banani Branch">Banani Branch (Dhaka)</option>
-              <option value="Chattogram GEC Branch">Chattogram Branch (GEC Circle)</option>
             </select>
           </div>
           <div>
@@ -1630,14 +1649,6 @@ Sher-e-Bangla Nagar, Dhaka.</p>
 
   <!-- JavaScript -->
   <script>
-    let acuityStep = 0;
-    const acuityLevels = [
-      { size: 'text-6xl', level: '20/40', dir: 'right', rot: '0deg' },
-      { size: 'text-4xl', level: '20/25', dir: 'up', rot: '-90deg' },
-      { size: 'text-2xl', level: '20/20', dir: 'left', rot: '180deg' },
-      { size: 'text-lg', level: '20/15', dir: 'down', rot: '90deg' }
-    ];
-
     let isVideoScrollingPaused = false;
     let autoScrollInterval = null;
     let resumeTimeout = null;
